@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.2.0",
+  "schemaVersion": "2.0.0",
   "product": "AglaStep",
   "purpose": "Educational self-assessment, not hiring or certification",
   "tracks": [
@@ -2072,6 +2072,1254 @@
           ],
           "correctIndex": 0,
           "explanation": "90 contacts on Tuesday is the largest value."
+        }
+      ]
+    },
+    {
+      "id": "typing",
+      "title": "Typing & Accuracy",
+      "audience": "fresher",
+      "description": "Keyboard accuracy, proofreading and workflow hygiene",
+      "questions": [
+        {
+          "id": "typing-01",
+          "competency": "Typing & Accuracy",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer ID is AB-1087 but the note shows AB-1807. What should you do?",
+          "options": [
+            "Correct it against the verified source",
+            "Leave it to save time",
+            "Guess which is right"
+          ],
+          "correctIndex": 0,
+          "explanation": "Check the verified original and correct the transposed digits."
+        },
+        {
+          "id": "typing-02",
+          "competency": "Typing & Accuracy",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A record must be entered exactly as provided. Which habit reduces errors?",
+          "options": [
+            "Enter quickly without checking",
+            "Read back and verify key fields",
+            "Skip punctuation"
+          ],
+          "correctIndex": 1,
+          "explanation": "Verifying identifiers and critical fields improves accuracy."
+        },
+        {
+          "id": "typing-03",
+          "competency": "Typing & Accuracy",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A long form has several mandatory fields. What is safest?",
+          "options": [
+            "Submit incomplete",
+            "Invent missing data",
+            "Flag missing fields and follow process"
+          ],
+          "correctIndex": 2,
+          "explanation": "Don't fabricate customer information."
+        },
+        {
+          "id": "typing-04",
+          "competency": "Typing & Accuracy",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Before pasting into a shared tool, check…",
+          "options": [
+            "Whether the content contains unauthorized personal data",
+            "Only the text color",
+            "Whether the text is long"
+          ],
+          "correctIndex": 0,
+          "explanation": "Data handling rules apply to clipboard content."
+        },
+        {
+          "id": "typing-05",
+          "competency": "Typing & Accuracy",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "You notice repeated typos when rushed. What is a useful improvement?",
+          "options": [
+            "Type even faster",
+            "Reduce speed slightly and practise high-error patterns",
+            "Avoid checking"
+          ],
+          "correctIndex": 1,
+          "explanation": "Accuracy-first deliberate practice builds reliability."
+        }
+      ]
+    },
+    {
+      "id": "email",
+      "title": "Email & Chat Support",
+      "audience": "agent",
+      "description": "Written support, tone and async case handling",
+      "questions": [
+        {
+          "id": "email-01",
+          "competency": "Email & Chat Support",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer writes in all caps about a delay. Best reply?",
+          "options": [
+            "Match their capitals",
+            "Acknowledge concern and provide a clear status",
+            "Ignore the complaint"
+          ],
+          "correctIndex": 1,
+          "explanation": "Professional tone and specific next steps lower frustration."
+        },
+        {
+          "id": "email-02",
+          "competency": "Email & Chat Support",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "What makes a good support email?",
+          "options": [
+            "Long paragraphs with jargon",
+            "Only a greeting",
+            "Clear subject, concise steps and next action"
+          ],
+          "correctIndex": 2,
+          "explanation": "Scan-friendly messages reduce confusion."
+        },
+        {
+          "id": "email-03",
+          "competency": "Email & Chat Support",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A chat customer stops responding. What should you do?",
+          "options": [
+            "Follow the approved inactivity process",
+            "Close instantly without warning",
+            "Send repeated demands"
+          ],
+          "correctIndex": 0,
+          "explanation": "Use defined idle-time and closing policies."
+        },
+        {
+          "id": "email-04",
+          "competency": "Email & Chat Support",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You need a screenshot containing personal data. What is best?",
+          "options": [
+            "Ask them to post it publicly",
+            "Use an approved secure collection method",
+            "Forward to personal email"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sensitive attachments belong in approved channels."
+        },
+        {
+          "id": "email-05",
+          "competency": "Email & Chat Support",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "One reply addresses two separate questions. Best layout?",
+          "options": [
+            "Ignore one question",
+            "Use vague language",
+            "Number the answers and confirm both are covered"
+          ],
+          "correctIndex": 2,
+          "explanation": "Structured responses improve clarity."
+        }
+      ]
+    },
+    {
+      "id": "excel",
+      "title": "Spreadsheets & Excel Basics",
+      "audience": "fresher",
+      "description": "Formulas, data quality and office productivity",
+      "questions": [
+        {
+          "id": "excel-01",
+          "competency": "Spreadsheets & Excel Basics",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "In a spreadsheet, which formula sums cells A1 through A5?",
+          "options": [
+            "=SUM(A1:A5)",
+            "=AVG(A1:A5)",
+            "=COUNT(A1:A5)"
+          ],
+          "correctIndex": 0,
+          "explanation": "SUM adds numeric values in the range."
+        },
+        {
+          "id": "excel-02",
+          "competency": "Spreadsheets & Excel Basics",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "What does filtering a table normally do?",
+          "options": [
+            "Delete hidden rows",
+            "Show rows meeting criteria",
+            "Change every value"
+          ],
+          "correctIndex": 1,
+          "explanation": "Filtering changes visibility rather than deleting data."
+        },
+        {
+          "id": "excel-03",
+          "competency": "Spreadsheets & Excel Basics",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A formula shows #DIV/0!. What is likely?",
+          "options": [
+            "Missing font",
+            "Date mismatch",
+            "A denominator is zero or empty"
+          ],
+          "correctIndex": 2,
+          "explanation": "Division by zero produces this spreadsheet error."
+        },
+        {
+          "id": "excel-04",
+          "competency": "Spreadsheets & Excel Basics",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Which is safer before sorting customer records?",
+          "options": [
+            "Select the full data table",
+            "Sort only one column without checking",
+            "Remove identifiers"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sorting the full table keeps records aligned."
+        },
+        {
+          "id": "excel-05",
+          "competency": "Spreadsheets & Excel Basics",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "For a chart comparing monthly volume, an appropriate starting choice is…",
+          "options": [
+            "Random scatter only",
+            "A column chart with month labels",
+            "A pie chart for every record"
+          ],
+          "correctIndex": 1,
+          "explanation": "Columns help compare quantities across periods."
+        }
+      ]
+    },
+    {
+      "id": "crm",
+      "title": "CRM & Ticketing Systems",
+      "audience": "agent",
+      "description": "Case documentation, statuses and ownership",
+      "questions": [
+        {
+          "id": "crm-01",
+          "competency": "CRM & Ticketing Systems",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer contacts again about an open ticket. First action?",
+          "options": [
+            "Create duplicate tickets immediately",
+            "Check the existing case history",
+            "Close the case blindly"
+          ],
+          "correctIndex": 1,
+          "explanation": "Reviewing history prevents duplicate effort."
+        },
+        {
+          "id": "crm-02",
+          "competency": "CRM & Ticketing Systems",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "What belongs in a useful case note?",
+          "options": [
+            "Opinions about the caller",
+            "Unrelated private details",
+            "Issue, actions, outcome and next steps"
+          ],
+          "correctIndex": 2,
+          "explanation": "Objective notes support continuity."
+        },
+        {
+          "id": "crm-03",
+          "competency": "CRM & Ticketing Systems",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "When a case is waiting on another team, you should…",
+          "options": [
+            "Set accurate status and ownership",
+            "Mark resolved falsely",
+            "Erase prior updates"
+          ],
+          "correctIndex": 0,
+          "explanation": "Transparent status allows follow-up."
+        },
+        {
+          "id": "crm-04",
+          "competency": "CRM & Ticketing Systems",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A CRM status is unclear. Best practice?",
+          "options": [
+            "Guess the closest option",
+            "Consult workflow guidance",
+            "Use your own unapproved code"
+          ],
+          "correctIndex": 1,
+          "explanation": "Consistent status definitions improve reporting."
+        },
+        {
+          "id": "crm-05",
+          "competency": "CRM & Ticketing Systems",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "What helps a handoff?",
+          "options": [
+            "Only the customer's first name",
+            "No history",
+            "A concise summary and pending actions"
+          ],
+          "correctIndex": 2,
+          "explanation": "The receiving agent needs context and ownership."
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "title": "Ethical Sales & Retention",
+      "audience": "agent",
+      "description": "Needs discovery and transparent value communication",
+      "questions": [
+        {
+          "id": "sales-01",
+          "competency": "Ethical Sales & Retention",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Before offering an upgrade, ask…",
+          "options": [
+            "About relevant customer needs",
+            "Only how much money they have",
+            "For unnecessary private details"
+          ],
+          "correctIndex": 0,
+          "explanation": "Needs discovery makes recommendations more relevant."
+        },
+        {
+          "id": "sales-02",
+          "competency": "Ethical Sales & Retention",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer says the offer is too expensive. Best response?",
+          "options": [
+            "Pressure them immediately",
+            "Explore needs and suitable approved alternatives",
+            "Hide the total price"
+          ],
+          "correctIndex": 1,
+          "explanation": "Transparent options support informed decisions."
+        },
+        {
+          "id": "sales-03",
+          "competency": "Ethical Sales & Retention",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A plan has conditions. You should…",
+          "options": [
+            "Skip the terms",
+            "Promise any savings",
+            "Explain relevant eligibility and costs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Customers need material terms to decide."
+        },
+        {
+          "id": "sales-04",
+          "competency": "Ethical Sales & Retention",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A customer declines. What is appropriate?",
+          "options": [
+            "Respect the decision and close professionally",
+            "Continue pressure indefinitely",
+            "Add the service anyway"
+          ],
+          "correctIndex": 0,
+          "explanation": "Consent is essential for sales."
+        },
+        {
+          "id": "sales-05",
+          "competency": "Ethical Sales & Retention",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "An incentive conflicts with customer needs. What should guide your action?",
+          "options": [
+            "Only the incentive",
+            "Product suitability and policy",
+            "Highest possible fee"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ethical selling prioritizes suitability."
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "title": "Billing & Payment Support",
+      "audience": "agent",
+      "description": "Invoice interpretation, disputes and payment safety",
+      "questions": [
+        {
+          "id": "finance-01",
+          "competency": "Billing & Payment Support",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer claims a duplicate charge. First step?",
+          "options": [
+            "Refund without checking",
+            "Review the transaction details securely",
+            "Dismiss the claim"
+          ],
+          "correctIndex": 1,
+          "explanation": "Verification helps establish what happened."
+        },
+        {
+          "id": "finance-02",
+          "competency": "Billing & Payment Support",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A bill includes an unknown charge. You should…",
+          "options": [
+            "Explain verified line items and next steps",
+            "Invent a reason",
+            "Delete the charge"
+          ],
+          "correctIndex": 0,
+          "explanation": "Use accurate records and approved dispute procedures."
+        },
+        {
+          "id": "finance-03",
+          "competency": "Billing & Payment Support",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A caller offers full card details over an unapproved channel. Best action?",
+          "options": [
+            "Store them in notes",
+            "Read them aloud repeatedly",
+            "Redirect to approved secure payment process"
+          ],
+          "correctIndex": 2,
+          "explanation": "Payment information needs controlled handling."
+        },
+        {
+          "id": "finance-04",
+          "competency": "Billing & Payment Support",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A refund is pending. What should you communicate?",
+          "options": [
+            "A guaranteed date without evidence",
+            "The verified status and policy-based timeframe",
+            "That refunds never fail"
+          ],
+          "correctIndex": 1,
+          "explanation": "Avoid unsupported promises."
+        },
+        {
+          "id": "finance-05",
+          "competency": "Billing & Payment Support",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "If 2 items cost ₹250 each before tax, the subtotal is…",
+          "options": [
+            "₹500",
+            "₹250",
+            "₹750"
+          ],
+          "correctIndex": 0,
+          "explanation": "Two items times ₹250 equals ₹500."
+        }
+      ]
+    },
+    {
+      "id": "technical",
+      "title": "Technical Troubleshooting",
+      "audience": "agent",
+      "description": "Structured diagnosis and digital support",
+      "questions": [
+        {
+          "id": "technical-01",
+          "competency": "Technical Troubleshooting",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "An app fails to load for one user. Best first approach?",
+          "options": [
+            "Reinstall without checking anything",
+            "Ask about device, error and steps to reproduce",
+            "Assume a global outage"
+          ],
+          "correctIndex": 1,
+          "explanation": "Basic context narrows causes."
+        },
+        {
+          "id": "technical-02",
+          "competency": "Technical Troubleshooting",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A fix works only temporarily. What should you do?",
+          "options": [
+            "Record symptoms and investigate repeat patterns",
+            "Declare permanent resolution",
+            "Ignore recurrence"
+          ],
+          "correctIndex": 0,
+          "explanation": "Repeat incidents may need root-cause review."
+        },
+        {
+          "id": "technical-03",
+          "competency": "Technical Troubleshooting",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You suspect an outage affects multiple users. What should you check?",
+          "options": [
+            "Personal opinions",
+            "Only one device",
+            "Approved incident and status channels"
+          ],
+          "correctIndex": 2,
+          "explanation": "Trusted outage updates avoid misinformation."
+        },
+        {
+          "id": "technical-04",
+          "competency": "Technical Troubleshooting",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "When asking a customer to restart a device, you should…",
+          "options": [
+            "Explain purpose and check for disruption",
+            "Demand without explanation",
+            "Delete their files"
+          ],
+          "correctIndex": 0,
+          "explanation": "Support steps should be safe and transparent."
+        },
+        {
+          "id": "technical-05",
+          "competency": "Technical Troubleshooting",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A proposed fix risks losing data. Best approach?",
+          "options": [
+            "Proceed without warning",
+            "Follow approved safeguards and obtain needed authorization",
+            "Hide the risk"
+          ],
+          "correctIndex": 1,
+          "explanation": "Prevent harm and follow recovery procedures."
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI Literacy for BPO",
+      "audience": "mid",
+      "description": "Responsible AI assistance and output verification",
+      "questions": [
+        {
+          "id": "ai-01",
+          "competency": "AI Literacy for BPO",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "An AI tool generates a confident answer about policy. You should…",
+          "options": [
+            "Trust it automatically",
+            "Verify against current approved policy",
+            "Send it without review"
+          ],
+          "correctIndex": 1,
+          "explanation": "Generated outputs can be inaccurate."
+        },
+        {
+          "id": "ai-02",
+          "competency": "AI Literacy for BPO",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "What should you avoid entering into unapproved AI tools?",
+          "options": [
+            "Public example text",
+            "General study questions",
+            "Real customer personal information"
+          ],
+          "correctIndex": 2,
+          "explanation": "Unapproved tools can create data exposure."
+        },
+        {
+          "id": "ai-03",
+          "competency": "AI Literacy for BPO",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "An AI draft sounds impolite. Best action?",
+          "options": [
+            "Review and edit for tone and correctness",
+            "Send it anyway",
+            "Blame the AI"
+          ],
+          "correctIndex": 0,
+          "explanation": "Human review remains necessary."
+        },
+        {
+          "id": "ai-04",
+          "competency": "AI Literacy for BPO",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "An AI summary misses a key exception. You should…",
+          "options": [
+            "Ignore the exception",
+            "Check source material and correct the summary",
+            "Invent supporting facts"
+          ],
+          "correctIndex": 1,
+          "explanation": "Source verification matters."
+        },
+        {
+          "id": "ai-05",
+          "competency": "AI Literacy for BPO",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "What is a useful AI application for learning?",
+          "options": [
+            "Automated hiring decisions without safeguards",
+            "Publishing private calls",
+            "Generating role-play scenarios for practice"
+          ],
+          "correctIndex": 2,
+          "explanation": "Practice scenarios can assist learning without risking customer data."
+        }
+      ]
+    },
+    {
+      "id": "numeracy",
+      "title": "Workplace Numeracy",
+      "audience": "fresher",
+      "description": "Percentages, schedules and everyday calculations",
+      "questions": [
+        {
+          "id": "numeracy-01",
+          "competency": "Workplace Numeracy",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A shift begins at 9:30 and ends at 18:00. How long is it, including breaks?",
+          "options": [
+            "8.5 hours",
+            "7.5 hours",
+            "9.5 hours"
+          ],
+          "correctIndex": 0,
+          "explanation": "From 09:30 to 18:00 is eight hours thirty minutes."
+        },
+        {
+          "id": "numeracy-02",
+          "competency": "Workplace Numeracy",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "20% of 150 contacts equals…",
+          "options": [
+            "20",
+            "30",
+            "40"
+          ],
+          "correctIndex": 1,
+          "explanation": "0.20 × 150 = 30."
+        },
+        {
+          "id": "numeracy-03",
+          "competency": "Workplace Numeracy",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A queue receives 80 new and closes 65. Net change in backlog?",
+          "options": [
+            "Decreases 15",
+            "Unchanged",
+            "Increases 15"
+          ],
+          "correctIndex": 2,
+          "explanation": "80 incoming minus 65 closed adds 15 pending items."
+        },
+        {
+          "id": "numeracy-04",
+          "competency": "Workplace Numeracy",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A price falls from ₹1,000 to ₹900. Discount rate?",
+          "options": [
+            "10%",
+            "15%",
+            "20%"
+          ],
+          "correctIndex": 0,
+          "explanation": "₹100 out of ₹1,000 is 10%."
+        },
+        {
+          "id": "numeracy-05",
+          "competency": "Workplace Numeracy",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Six equally long calls total 42 minutes. Average duration?",
+          "options": [
+            "6 minutes",
+            "7 minutes",
+            "8 minutes"
+          ],
+          "correctIndex": 1,
+          "explanation": "42 divided by six is seven minutes."
+        }
+      ]
+    },
+    {
+      "id": "workplace",
+      "title": "Workplace Professionalism",
+      "audience": "fresher",
+      "description": "Collaboration, punctuality and professional judgment",
+      "questions": [
+        {
+          "id": "workplace-01",
+          "competency": "Workplace Professionalism",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "You might be late for your shift. Best step?",
+          "options": [
+            "Say nothing",
+            "Notify the appropriate person promptly",
+            "Ask a colleague to sign in as you"
+          ],
+          "correctIndex": 1,
+          "explanation": "Timely communication supports planning."
+        },
+        {
+          "id": "workplace-02",
+          "competency": "Workplace Professionalism",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A colleague gives helpful feedback. Best response?",
+          "options": [
+            "Listen and identify an action to improve",
+            "Reject it instantly",
+            "Share it to mock them"
+          ],
+          "correctIndex": 0,
+          "explanation": "Feedback is an opportunity to adjust behavior."
+        },
+        {
+          "id": "workplace-03",
+          "competency": "Workplace Professionalism",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You made an error affecting a customer. What should you do?",
+          "options": [
+            "Hide it",
+            "Blame systems without review",
+            "Report it and follow correction procedures"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ownership and prompt action support trust."
+        },
+        {
+          "id": "workplace-04",
+          "competency": "Workplace Professionalism",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A teammate needs urgent help while you have deadlines. Best approach?",
+          "options": [
+            "Clarify priority and coordinate support",
+            "Ignore all your responsibilities",
+            "Take over without discussion"
+          ],
+          "correctIndex": 0,
+          "explanation": "Good coordination considers both needs."
+        },
+        {
+          "id": "workplace-05",
+          "competency": "Workplace Professionalism",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A team meeting includes confidential customer data. You should…",
+          "options": [
+            "Display it openly",
+            "Use only authorized information and approved sharing",
+            "Take photos for personal use"
+          ],
+          "correctIndex": 1,
+          "explanation": "Confidentiality applies to internal collaboration."
+        }
+      ]
+    },
+    {
+      "id": "stress",
+      "title": "Resilience & Wellbeing at Work",
+      "audience": "agent",
+      "description": "Healthy habits for demanding service roles",
+      "questions": [
+        {
+          "id": "stress-01",
+          "competency": "Resilience & Wellbeing at Work",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "After a difficult call, which action is usually constructive?",
+          "options": [
+            "Take an approved brief reset and use support resources",
+            "Ignore all stress signals",
+            "Retaliate against the caller"
+          ],
+          "correctIndex": 0,
+          "explanation": "Short recovery and appropriate support may help."
+        },
+        {
+          "id": "stress-02",
+          "competency": "Resilience & Wellbeing at Work",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "You are repeatedly missing breaks because of workload. Best response?",
+          "options": [
+            "Keep silent indefinitely",
+            "Raise the workload issue through the right channel",
+            "Skip meals routinely"
+          ],
+          "correctIndex": 1,
+          "explanation": "Workload concerns deserve attention."
+        },
+        {
+          "id": "stress-03",
+          "competency": "Resilience & Wellbeing at Work",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A teammate seems overwhelmed. What is supportive?",
+          "options": [
+            "Diagnose them",
+            "Publicly criticize them",
+            "Check in respectfully and point to available support"
+          ],
+          "correctIndex": 2,
+          "explanation": "Support should respect privacy and autonomy."
+        },
+        {
+          "id": "stress-04",
+          "competency": "Resilience & Wellbeing at Work",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "An angry caller is escalating your stress. You should…",
+          "options": [
+            "Follow de-escalation policy and keep professional boundaries",
+            "Argue back",
+            "Share personal details"
+          ],
+          "correctIndex": 0,
+          "explanation": "Boundaries and procedure improve safety."
+        },
+        {
+          "id": "stress-05",
+          "competency": "Resilience & Wellbeing at Work",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "You notice continuing fatigue affecting accuracy. Best action?",
+          "options": [
+            "Hide it permanently",
+            "Review rest, workload and support options",
+            "Use unsafe shortcuts"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sustained fatigue can undermine safe work."
+        }
+      ]
+    },
+    {
+      "id": "wfm",
+      "title": "Workforce Management Basics",
+      "audience": "mid",
+      "description": "Scheduling, adherence and capacity planning",
+      "questions": [
+        {
+          "id": "wfm-01",
+          "competency": "Workforce Management Basics",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A team expects higher inbound volume tomorrow. What should planning consider?",
+          "options": [
+            "Expected demand, staffing and service goals",
+            "Only last year's holiday list",
+            "Personal guesses"
+          ],
+          "correctIndex": 0,
+          "explanation": "Forecasts and constraints inform staffing."
+        },
+        {
+          "id": "wfm-02",
+          "competency": "Workforce Management Basics",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "An agent changes break time without approval. What can happen?",
+          "options": [
+            "Guaranteed quality improvement",
+            "Schedule adherence may be affected",
+            "Forecast volume disappears"
+          ],
+          "correctIndex": 1,
+          "explanation": "Adherence compares actual activity to planned schedules."
+        },
+        {
+          "id": "wfm-03",
+          "competency": "Workforce Management Basics",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "What is shrinkage in workforce planning?",
+          "options": [
+            "Extra customer calls only",
+            "Always unproductive behavior",
+            "Time staff are unavailable for handling contacts"
+          ],
+          "correctIndex": 2,
+          "explanation": "Shrinkage covers activities such as leave, training and meetings."
+        },
+        {
+          "id": "wfm-04",
+          "competency": "Workforce Management Basics",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A forecast is consistently too high. Best action?",
+          "options": [
+            "Compare forecast against actual volumes and refine assumptions",
+            "Ignore actuals",
+            "Cut all staffing blindly"
+          ],
+          "correctIndex": 0,
+          "explanation": "Forecast error analysis improves predictions."
+        },
+        {
+          "id": "wfm-05",
+          "competency": "Workforce Management Basics",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Why might occupancy that stays extremely high be concerning?",
+          "options": [
+            "It guarantees wellbeing",
+            "It may leave too little recovery capacity",
+            "It always raises CSAT"
+          ],
+          "correctIndex": 1,
+          "explanation": "Continuous high workload can reduce resilience."
+        }
+      ]
+    },
+    {
+      "id": "process",
+      "title": "Process Improvement",
+      "audience": "mid",
+      "description": "Root causes, SOPs and continuous improvement",
+      "questions": [
+        {
+          "id": "process-01",
+          "competency": "Process Improvement",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A recurring error appears across several teams. Best first response?",
+          "options": [
+            "Blame a single person",
+            "Map the process and investigate shared causes",
+            "Ignore pattern"
+          ],
+          "correctIndex": 1,
+          "explanation": "Shared failures may indicate systemic gaps."
+        },
+        {
+          "id": "process-02",
+          "competency": "Process Improvement",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "What is a useful SOP?",
+          "options": [
+            "An undocumented habit",
+            "A personal preference",
+            "Clear current steps, exceptions and ownership"
+          ],
+          "correctIndex": 2,
+          "explanation": "Reliable instructions make work repeatable."
+        },
+        {
+          "id": "process-03",
+          "competency": "Process Improvement",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "After a process change, assess…",
+          "options": [
+            "Both intended results and unintended effects",
+            "Only whether the slide looked good",
+            "Only one positive story"
+          ],
+          "correctIndex": 0,
+          "explanation": "Monitoring checks actual impact."
+        },
+        {
+          "id": "process-04",
+          "competency": "Process Improvement",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A step creates repeated duplicate work. You should…",
+          "options": [
+            "Keep it forever",
+            "Measure impact and propose a controlled improvement",
+            "Remove all controls immediately"
+          ],
+          "correctIndex": 1,
+          "explanation": "Changes should balance efficiency and risk."
+        },
+        {
+          "id": "process-05",
+          "competency": "Process Improvement",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Why maintain a version history?",
+          "options": [
+            "To make documents longer",
+            "To hide revisions",
+            "To track what changed and when"
+          ],
+          "correctIndex": 2,
+          "explanation": "Versioning preserves accountability."
+        }
+      ]
+    },
+    {
+      "id": "training-design",
+      "title": "Instructional Design",
+      "audience": "mid",
+      "description": "Learning objectives, practice and evaluation",
+      "questions": [
+        {
+          "id": "training-design-01",
+          "competency": "Instructional Design",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "An objective says 'understand calls.' How improve it?",
+          "options": [
+            "Define an observable call-handling behavior",
+            "Delete the objective",
+            "Add more adjectives"
+          ],
+          "correctIndex": 0,
+          "explanation": "Observable outcomes can be assessed."
+        },
+        {
+          "id": "training-design-02",
+          "competency": "Instructional Design",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "To teach objection handling, useful practice includes…",
+          "options": [
+            "Only memorizing slides",
+            "Role-plays with feedback",
+            "Only attendance"
+          ],
+          "correctIndex": 1,
+          "explanation": "Practice helps transfer knowledge into skill."
+        },
+        {
+          "id": "training-design-03",
+          "competency": "Instructional Design",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Learners repeatedly miss a concept. What should the trainer do?",
+          "options": [
+            "Move on regardless",
+            "Blame learners",
+            "Diagnose the misconception and reteach"
+          ],
+          "correctIndex": 2,
+          "explanation": "Targeted instruction addresses the barrier."
+        },
+        {
+          "id": "training-design-04",
+          "competency": "Instructional Design",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "How can training retention be checked?",
+          "options": [
+            "Reassessment after a delay and workplace observations",
+            "Only end-of-session applause",
+            "Slide count"
+          ],
+          "correctIndex": 0,
+          "explanation": "Delayed checks reveal retention and transfer."
+        },
+        {
+          "id": "training-design-05",
+          "competency": "Instructional Design",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Which content design aids new learners?",
+          "options": [
+            "Unexplained acronyms",
+            "Examples, short chunks and guided practice",
+            "Maximum text on each slide"
+          ],
+          "correctIndex": 1,
+          "explanation": "Scaffolding makes unfamiliar skills accessible."
+        }
+      ]
+    },
+    {
+      "id": "conflict",
+      "title": "Conflict Resolution",
+      "audience": "mid",
+      "description": "Feedback, collaboration and fair resolution",
+      "questions": [
+        {
+          "id": "conflict-01",
+          "competency": "Conflict Resolution",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Two agents disagree about task ownership. What should a leader do?",
+          "options": [
+            "Hear both perspectives and clarify responsibilities",
+            "Choose a favorite",
+            "Let resentment build"
+          ],
+          "correctIndex": 0,
+          "explanation": "Transparent roles and listening reduce conflict."
+        },
+        {
+          "id": "conflict-02",
+          "competency": "Conflict Resolution",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "When giving corrective feedback, focus on…",
+          "options": [
+            "Personal traits",
+            "Specific behavior and impact",
+            "Rumors"
+          ],
+          "correctIndex": 1,
+          "explanation": "Behavior-based discussion supports change."
+        },
+        {
+          "id": "conflict-03",
+          "competency": "Conflict Resolution",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A conflict involves possible harassment. Best action?",
+          "options": [
+            "Treat as normal banter",
+            "Discuss it publicly",
+            "Follow appropriate reporting and safety policy"
+          ],
+          "correctIndex": 2,
+          "explanation": "Serious concerns require proper procedures."
+        },
+        {
+          "id": "conflict-04",
+          "competency": "Conflict Resolution",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A teammate challenges your idea respectfully. You should…",
+          "options": [
+            "Evaluate evidence and remain open",
+            "Silence them",
+            "Assume disrespect"
+          ],
+          "correctIndex": 0,
+          "explanation": "Constructive dissent can improve decisions."
+        },
+        {
+          "id": "conflict-05",
+          "competency": "Conflict Resolution",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "After resolving a misunderstanding, what helps?",
+          "options": [
+            "Ignore follow-through",
+            "Confirm actions and check back",
+            "Guarantee zero future issues"
+          ],
+          "correctIndex": 1,
+          "explanation": "Accountability and follow-up matter."
+        }
+      ]
+    },
+    {
+      "id": "digital",
+      "title": "Digital & Cyber Hygiene",
+      "audience": "fresher",
+      "description": "Safe digital workflows and collaboration",
+      "questions": [
+        {
+          "id": "digital-01",
+          "competency": "Digital & Cyber Hygiene",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "An unexpected link asks for your company password. You should…",
+          "options": [
+            "Verify through approved security channels",
+            "Enter it quickly",
+            "Forward to everyone"
+          ],
+          "correctIndex": 0,
+          "explanation": "Unexpected credential requests may be phishing."
+        },
+        {
+          "id": "digital-02",
+          "competency": "Digital & Cyber Hygiene",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Which is better for securing an account?",
+          "options": [
+            "Reusing one password",
+            "Unique credentials and approved MFA",
+            "Sharing codes with friends"
+          ],
+          "correctIndex": 1,
+          "explanation": "Unique passwords and multifactor authentication improve safety."
+        },
+        {
+          "id": "digital-03",
+          "competency": "Digital & Cyber Hygiene",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Before sharing a cloud document, check…",
+          "options": [
+            "Only the filename",
+            "Only the document length",
+            "Access permissions and contents"
+          ],
+          "correctIndex": 2,
+          "explanation": "Links and permissions can expose sensitive information."
+        },
+        {
+          "id": "digital-04",
+          "competency": "Digital & Cyber Hygiene",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You receive a strange attachment from an unknown sender. Best step?",
+          "options": [
+            "Follow security verification procedures",
+            "Open it immediately",
+            "Disable antivirus"
+          ],
+          "correctIndex": 0,
+          "explanation": "Untrusted attachments can be malicious."
+        },
+        {
+          "id": "digital-05",
+          "competency": "Digital & Cyber Hygiene",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "What helps professional remote meetings?",
+          "options": [
+            "Leaving the mic on constantly",
+            "Clear audio, respectful turn-taking and privacy checks",
+            "Recording without consent"
+          ],
+          "correctIndex": 1,
+          "explanation": "Meeting etiquette and privacy protect participants."
         }
       ]
     }
