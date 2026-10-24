@@ -3,7 +3,7 @@ const root=document.getElementById('learner-account');if(!root)return;
 const cfg=window.AGLASTEP_AUTH_CONFIG||{},enabled=/^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(cfg.url||'')&&typeof cfg.publishableKey==='string'&&cfg.publishableKey.length>15;
 const E=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};
 const B=(label,handler,cls='ac-button')=>{const n=E('button',label,cls);n.type='button';n.addEventListener('click',handler);return n};
-let client=null,user=null,consent=false,busy=false,tab='overview',cloudMeta=null,message='',lastAuthId=null;
+let client=null,user=null,consent=false,busy=false,tab='overview',cloudMeta=null,message='',lastAuthId=null,authLoading=enabled;
 const shell=E('div',undefined,'ac2'),hero=E('div',undefined,'ac2-hero'),nav=E('div',undefined,'ac2-nav'),body=E('div',undefined,'ac2-body'),notice=E('p',undefined,'ac2-notice');notice.setAttribute('role','status');notice.setAttribute('aria-live','polite');shell.append(hero,notice,nav,body);root.replaceChildren(shell);
 const local=()=>window.AglaProgress?.snapshot?.()||{sessions:[],visits:[],events:[]};
 const stats=(s)=>{const sessions=s.sessions||[],labs=sessions.filter(x=>x.type==='lab'),types={call:0,voice:0,typing:0};sessions.forEach(x=>{if(x.type in types)types[x.type]++});return {total:sessions.length,labs:labs.length,calls:types.call,typing:types.typing,voice:types.voice,days:new Set(s.visits||[]).size,accuracy:labs.length?Math.round(labs.reduce((a,b)=>a+Number(b.accuracy||0),0)/labs.length):null}};
@@ -23,10 +23,36 @@ function exportLocal(){const blob=new Blob([JSON.stringify(local(),null,2)],{typ
 function clearLocal(){if(window.confirm('Permanently clear practice history saved in this browser? This will not delete your cloud backup.')){window.AglaProgress.clear();tell('Device progress cleared.');draw()}}
 async function updateName(name){if(!client||!user)return;const {data,error}=await client.auth.updateUser({data:{full_name:name.trim().slice(0,60)}});if(error){tell('Could not update display name: '+error.message);return}user=data.user;tell('Display name updated.');draw()}
 function profile(){body.append(E('h4','Profile & privacy'));const details=E('div',undefined,'ac2-panel');details.append(E('p','Signed in with: '+(user.app_metadata?.provider||'Supabase')),E('p','Email: '+(user.email||'Not available')));const input=E('input');input.value=String(user.user_metadata?.full_name||'');input.maxLength=60;input.placeholder='Your display name';input.setAttribute('aria-label','Your display name');details.append(E('label','Display name'),input,B('Save display name',()=>updateName(input.value)));body.append(details);const privacy=E('div',undefined,'ac2-panel');privacy.append(E('h4','Your data controls'),E('p','Practice remains available without logging in. You control any saved cloud snapshot.'));const buttons=E('div',undefined,'ac2-actions');buttons.append(B('Download my device data',exportLocal,'ac2-secondary'),B('Clear device history',clearLocal,'ac2-secondary'),B('Delete cloud backup',deleteCloud,'ac2-danger'));privacy.append(buttons,E('p','Deleting a cloud backup is different from deleting your authentication account. Complete account deletion requires an authorized server-side process, which is not available yet.','ac2-footnote'));body.append(privacy)}
-function signin(){body.append(E('h4','Sign in to your learner space'),E('p','You can use all learning tools without signing in. Google Sign-In is optional.'));if(!enabled){body.append(E('p','Cloud accounts are not configured yet.'));return}body.append(B('Continue with Google',googleLogin,'ac2-google'));const detail=E('details',undefined,'ac2-email');detail.append(E('summary','Use email sign-in instead (limited availability)'));const form=E('form'),input=E('input'),btn=E('button','Send secure link','ac2-secondary');input.type='email';input.required=true;input.placeholder='Email address';input.setAttribute('aria-label','Email address');btn.type='submit';form.append(input,btn);form.onsubmit=async e=>{e.preventDefault();btn.disabled=true;try{const {error}=await client.auth.signInWithOtp({email:input.value.trim(),options:{emailRedirectTo:location.origin+location.pathname+'#account'}});if(error)throw error;tell('Check your inbox for your sign-in link.')}catch(ex){tell(/rate limit|429|too many/i.test(ex.message)?'Email sending limit reached. Google sign-in may be used instead.':'Email sign-in failed: '+ex.message)}finally{btn.disabled=false}};detail.append(form);body.append(detail)}
-async function googleLogin(){if(!client)return;try{const {error}=await client.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+location.pathname+'#account'}});if(error)throw error}catch(ex){tell('Google sign-in failed: '+ex.message)}}
+function signin(){body.append(E('h4','Sign in to your learner space'),E('p','You can use all learning tools without signing in. Google Sign-In is optional.'));if(!enabled){body.append(E('p','Cloud accounts are not configured yet.'));return}const googleButton=B(authLoading?'Preparing Google Sign-In…':'Continue with Google',googleLogin,'ac2-google');googleButton.disabled=authLoading||!client;body.append(googleButton);const detail=E('details',undefined,'ac2-email');detail.append(E('summary','Use email sign-in instead (limited availability)'));const form=E('form'),input=E('input'),btn=E('button','Send secure link','ac2-secondary');input.type='email';input.required=true;input.placeholder='Email address';input.setAttribute('aria-label','Email address');btn.type='submit';form.append(input,btn);form.onsubmit=async e=>{e.preventDefault();btn.disabled=true;try{const {error}=await client.auth.signInWithOtp({email:input.value.trim(),options:{emailRedirectTo:location.origin+location.pathname+'#account'}});if(error)throw error;tell('Check your inbox for your sign-in link.')}catch(ex){tell(/rate limit|429|too many/i.test(ex.message)?'Email sending limit reached. Google sign-in may be used instead.':'Email sign-in failed: '+ex.message)}finally{btn.disabled=false}};detail.append(form);body.append(detail)}
+async function googleLogin(){if(!client){tell('Sign-in is still loading. Please try again shortly.');return}try{const {error}=await client.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+location.pathname+'#account'}});if(error)throw error}catch(ex){tell('Google sign-in failed: '+ex.message)}}
 async function signOut(){if(!client)return;try{const {error}=await client.auth.signOut();if(error)throw error;user=null;consent=false;cloudMeta=null;tab='overview';tell('Signed out. Your local practice history remains on this device.');draw()}catch(ex){tell('Sign-out failed: '+ex.message)}}
-async function init(){try{const sdk=window.supabase;if(!sdk?.createClient)throw Error('Sign-in library unavailable');client=sdk.createClient(cfg.url,cfg.publishableKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});const {data,error}=await client.auth.getUser();if(error&&error.name!=='AuthSessionMissingError')throw error;user=data?.user||null;lastAuthId=user?.id||null;client.auth.onAuthStateChange((event,session)=>{const next=session?.user||null;if((next?.id||null)!==lastAuthId){consent=false;cloudMeta=null;tab='overview';lastAuthId=next?.id||null}user=next;draw()});draw()}catch(ex){tell('Account service unavailable: '+ex.message)}}
+async function init(){
+ try{
+  const sdk=window.supabase;
+  if(!sdk?.createClient)throw Error('Sign-in library unavailable');
+  client=sdk.createClient(cfg.url,cfg.publishableKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+  client.auth.onAuthStateChange((event,session)=>{
+    const next=session?.user||null;
+    if((next?.id||null)!==lastAuthId){consent=false;cloudMeta=null;tab='overview';lastAuthId=next?.id||null}
+    user=next;
+    if(event==='SIGNED_IN')tell('Signed in successfully. Your learning dashboard is ready.');
+    authLoading=false;draw();
+  });
+  const {data,error}=await client.auth.getSession();
+  if(error)tell('Session check: '+error.message+'. You can still try Google Sign-In.');
+  if(data?.session?.user){user=data.session.user;lastAuthId=user.id}
+  const params=new URLSearchParams(location.search);
+  const authError=params.get('error_description')||params.get('error');
+  if(authError)tell('Google sign-in returned an error: '+authError);
+  authLoading=false;draw();
+ }catch(ex){authLoading=false;tell('Account service could not initialize: '+ex.message);draw()}
+}
+function loadSDK(url,fallback){
+ const script=document.createElement('script');script.src=url;script.async=true;script.onload=init;
+ script.onerror=()=>{if(fallback)loadSDK(fallback,null);else{authLoading=false;tell('Could not load the sign-in library. Check your internet connection and refresh.');draw()}};
+ document.head.append(script);
+}
+
 window.addEventListener('ag-progress-change',()=>{if(user&&(tab==='overview'||tab==='history'))draw()});
-draw();if(enabled){const script=document.createElement('script');script.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.95.3/dist/umd/supabase.js';script.onload=init;script.onerror=()=>tell('Sign-in library could not load. Other learning tools remain available.');document.head.append(script)}
+draw();if(enabled)loadSDK('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.95.3/dist/umd/supabase.js','https://unpkg.com/@supabase/supabase-js@2.95.3/dist/umd/supabase.js')
 })();
