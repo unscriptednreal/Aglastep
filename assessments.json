@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "product": "AglaStep",
   "purpose": "Educational self-assessment, not hiring or certification",
   "tracks": [
@@ -78,6 +78,76 @@
           ],
           "correctIndex": 1,
           "explanation": "Use self-awareness with an improvement plan."
+        },
+        {
+          "id": "interview-06",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "In a video interview, your connection drops briefly. What should you do?",
+          "options": [
+            "Ignore the interruption",
+            "Reconnect, apologize briefly and continue",
+            "Cancel without informing anyone"
+          ],
+          "correctIndex": 1,
+          "explanation": "Recover professionally and communicate clearly."
+        },
+        {
+          "id": "interview-07",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A recruiter asks for an example of teamwork. What makes an answer persuasive?",
+          "options": [
+            "A specific situation, action and outcome",
+            "A claim that you always cooperate",
+            "A long description of the company"
+          ],
+          "correctIndex": 0,
+          "explanation": "Concrete examples help demonstrate workplace behavior."
+        },
+        {
+          "id": "interview-08",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You have no formal BPO experience. What should you highlight?",
+          "options": [
+            "Experience you invent",
+            "Only your grades",
+            "Transferable skills and genuine examples"
+          ],
+          "correctIndex": 2,
+          "explanation": "Relevant transferable skills can demonstrate potential."
+        },
+        {
+          "id": "interview-09",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "An interviewer asks whether you can work rotating shifts. How should you respond?",
+          "options": [
+            "Agree regardless of your availability",
+            "State your actual availability honestly",
+            "Avoid answering"
+          ],
+          "correctIndex": 1,
+          "explanation": "Accurate availability avoids future mismatches."
+        },
+        {
+          "id": "interview-10",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "At the end of an interview, the recruiter invites questions. What is useful to ask?",
+          "options": [
+            "How success is measured during initial training",
+            "Whether rules can be ignored",
+            "For a job guarantee"
+          ],
+          "correctIndex": 0,
+          "explanation": "Thoughtful role-specific questions show preparation."
         }
       ]
     },
@@ -156,6 +226,76 @@
           ],
           "correctIndex": 0,
           "explanation": "Their indicates possession."
+        },
+        {
+          "id": "english-06",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Choose the most professional follow-up.",
+          "options": [
+            "I need update now.",
+            "Kindly do the needful ASAP.",
+            "Could you please share an update by tomorrow?"
+          ],
+          "correctIndex": 2,
+          "explanation": "A polite request with a clear timeframe is effective."
+        },
+        {
+          "id": "english-07",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Which sentence is grammatically correct?",
+          "options": [
+            "She has submitted the form.",
+            "She have submitted the form.",
+            "She submitting the form yesterday."
+          ],
+          "correctIndex": 0,
+          "explanation": "A singular third-person subject uses has in the present perfect."
+        },
+        {
+          "id": "english-08",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Choose the clearest explanation of a delay.",
+          "options": [
+            "Your request is pending while our team verifies the details.",
+            "System issue only.",
+            "You should just wait."
+          ],
+          "correctIndex": 0,
+          "explanation": "Explain status and process without blaming the customer."
+        },
+        {
+          "id": "english-09",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Which subject line is best for a case update email?",
+          "options": [
+            "Hi",
+            "Update on your support case #245",
+            "Important!!!"
+          ],
+          "correctIndex": 1,
+          "explanation": "A descriptive subject makes correspondence easier to find."
+        },
+        {
+          "id": "english-10",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A customer misunderstands your instructions. What should you do?",
+          "options": [
+            "Repeat exactly the same phrasing",
+            "Use a shorter explanation and confirm understanding",
+            "Blame their English"
+          ],
+          "correctIndex": 1,
+          "explanation": "Adjust the explanation to the listener."
         }
       ]
     },
@@ -234,6 +374,76 @@
           ],
           "correctIndex": 0,
           "explanation": "Recognition supports de-escalation."
+        },
+        {
+          "id": "listening-06",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A caller gives two dates that sound similar. You should…",
+          "options": [
+            "Choose one",
+            "Confirm both dates aloud",
+            "Ignore the dates"
+          ],
+          "correctIndex": 1,
+          "explanation": "Confirming precise details prevents errors."
+        },
+        {
+          "id": "listening-07",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "During a lengthy explanation, the customer mentions a deadline. You should…",
+          "options": [
+            "Capture and confirm the deadline",
+            "Focus only on tone",
+            "Assume the deadline is flexible"
+          ],
+          "correctIndex": 0,
+          "explanation": "Time-sensitive details can affect prioritization."
+        },
+        {
+          "id": "listening-08",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A customer corrects your summary. What next?",
+          "options": [
+            "Argue that your notes are right",
+            "Ignore the correction",
+            "Thank them and update your understanding"
+          ],
+          "correctIndex": 2,
+          "explanation": "Active listening involves revising understanding."
+        },
+        {
+          "id": "listening-09",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A caller is speaking in a noisy environment. What helps?",
+          "options": [
+            "Make assumptions",
+            "Ask one focused clarification at a time",
+            "Rush through the script"
+          ],
+          "correctIndex": 1,
+          "explanation": "Focused prompts reduce error risk."
+        },
+        {
+          "id": "listening-10",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "What best demonstrates attentive listening?",
+          "options": [
+            "Acknowledging, clarifying and summarizing",
+            "Interrupting to save time",
+            "Repeating policy without context"
+          ],
+          "correctIndex": 0,
+          "explanation": "Listening requires understanding, not only hearing."
         }
       ]
     },
@@ -312,6 +522,76 @@
           ],
           "correctIndex": 2,
           "explanation": "Accessible language improves service."
+        },
+        {
+          "id": "empathy-06",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer describes the impact of a missed delivery. You should…",
+          "options": [
+            "Focus solely on the tracking number",
+            "Recognize the impact before discussing options",
+            "Offer an unauthorized refund"
+          ],
+          "correctIndex": 1,
+          "explanation": "Acknowledgment helps build trust."
+        },
+        {
+          "id": "empathy-07",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "An older customer asks for a slower explanation. Best response?",
+          "options": [
+            "Adapt the pace respectfully",
+            "Speak louder without asking",
+            "Direct them elsewhere"
+          ],
+          "correctIndex": 0,
+          "explanation": "Accessible service respects the customer's needs."
+        },
+        {
+          "id": "empathy-08",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A customer says 'Nobody has listened to me.' First response?",
+          "options": [
+            "Our agents are always right",
+            "That's not true",
+            "I'm sorry this has felt difficult. Let me understand the issue."
+          ],
+          "correctIndex": 2,
+          "explanation": "Address the experience without admitting unverified facts."
+        },
+        {
+          "id": "empathy-09",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Your proposed solution does not fully satisfy a customer. You should…",
+          "options": [
+            "End the call",
+            "Explain limitations and explore appropriate alternatives",
+            "Promise an impossible outcome"
+          ],
+          "correctIndex": 1,
+          "explanation": "Transparency and options support respectful resolution."
+        },
+        {
+          "id": "empathy-10",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A customer apologizes for being emotional. You should…",
+          "options": [
+            "Respond kindly and continue helping",
+            "Lecture them about behavior",
+            "Ignore the concern"
+          ],
+          "correctIndex": 0,
+          "explanation": "A supportive tone can restore collaboration."
         }
       ]
     },
@@ -390,6 +670,76 @@
           ],
           "correctIndex": 1,
           "explanation": "Accuracy outweighs guessing."
+        },
+        {
+          "id": "calls-06",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "You must consult a knowledge article mid-call. Best approach?",
+          "options": [
+            "Silently search for minutes",
+            "Explain the brief check and keep the customer informed",
+            "Guess the answer"
+          ],
+          "correctIndex": 1,
+          "explanation": "Narrating relevant actions sets expectations."
+        },
+        {
+          "id": "calls-07",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer asks for a reference number. You should…",
+          "options": [
+            "Invent one",
+            "Refuse by default",
+            "Provide the correct number if available under policy"
+          ],
+          "correctIndex": 2,
+          "explanation": "Accurate reference details support follow-up."
+        },
+        {
+          "id": "calls-08",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "What is a good probing question for intermittent service?",
+          "options": [
+            "When does the issue usually happen?",
+            "Why are you always complaining?",
+            "Can we close the case?"
+          ],
+          "correctIndex": 0,
+          "explanation": "Open targeted questions identify patterns."
+        },
+        {
+          "id": "calls-09",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You have completed a requested change. Next?",
+          "options": [
+            "End immediately",
+            "Confirm the outcome and any next steps",
+            "Promise unrelated benefits"
+          ],
+          "correctIndex": 1,
+          "explanation": "Closing the loop improves clarity."
+        },
+        {
+          "id": "calls-10",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "The connection is poor. You should…",
+          "options": [
+            "Pretend to hear everything",
+            "Continue without checking",
+            "Politely verify key information"
+          ],
+          "correctIndex": 2,
+          "explanation": "Confirming information reduces mistakes."
         }
       ]
     },
@@ -468,6 +818,76 @@
           ],
           "correctIndex": 0,
           "explanation": "Evidence-based discussions resolve scoring differences."
+        },
+        {
+          "id": "quality-06",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A QA scorecard requires mandatory disclosure. The agent omitted it. A reviewer should…",
+          "options": [
+            "Apply the documented criterion and record evidence",
+            "Ignore because the call was friendly",
+            "Change the rule after scoring"
+          ],
+          "correctIndex": 0,
+          "explanation": "Documented requirements must be applied consistently."
+        },
+        {
+          "id": "quality-07",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Two reviewers differ in interpreting a criterion. What is appropriate?",
+          "options": [
+            "Keep separate undocumented interpretations",
+            "Hold calibration using the policy and call evidence",
+            "Average scores without discussion"
+          ],
+          "correctIndex": 1,
+          "explanation": "Calibration improves scoring consistency."
+        },
+        {
+          "id": "quality-08",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "What helps an agent act on QA coaching?",
+          "options": [
+            "A vague warning",
+            "Only a numeric score",
+            "An example, expected behavior and practice step"
+          ],
+          "correctIndex": 2,
+          "explanation": "Behavior-based guidance is actionable."
+        },
+        {
+          "id": "quality-09",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A score improves but customer complaints rise. What should QA do?",
+          "options": [
+            "Review multiple indicators and relevant call samples",
+            "Assume quality is perfect",
+            "Stop monitoring"
+          ],
+          "correctIndex": 0,
+          "explanation": "Balanced indicators surface unintended effects."
+        },
+        {
+          "id": "quality-10",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "What should be checked before a QA policy update takes effect?",
+          "options": [
+            "Only typography",
+            "Version, effective date and reviewer communication",
+            "Individual preference"
+          ],
+          "correctIndex": 1,
+          "explanation": "Documented changes promote fairness."
         }
       ]
     },
@@ -546,6 +966,76 @@
           ],
           "correctIndex": 2,
           "explanation": "Urgency or seniority doesn't replace verification."
+        },
+        {
+          "id": "privacy-06",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A caller wants to change the registered phone number. You should…",
+          "options": [
+            "Follow the approved account recovery or verification workflow",
+            "Change it on request alone",
+            "Ask them to post documents publicly"
+          ],
+          "correctIndex": 0,
+          "explanation": "Contact changes can be sensitive and require controlled verification."
+        },
+        {
+          "id": "privacy-07",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "You accidentally send a case note to the wrong internal channel. Next?",
+          "options": [
+            "Delete silently and say nothing",
+            "Follow the incident reporting procedure promptly",
+            "Forward it to more colleagues"
+          ],
+          "correctIndex": 1,
+          "explanation": "Prompt reporting helps contain exposure."
+        },
+        {
+          "id": "privacy-08",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Which note is most appropriate?",
+          "options": [
+            "Full card numbers copied into comments",
+            "Personal opinions about the customer",
+            "Necessary case facts in the approved system"
+          ],
+          "correctIndex": 2,
+          "explanation": "Data minimization reduces unnecessary exposure."
+        },
+        {
+          "id": "privacy-09",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A colleague asks to use your account to save time. You should…",
+          "options": [
+            "Decline and direct them to approved access procedures",
+            "Share the password briefly",
+            "Write credentials on a sticky note"
+          ],
+          "correctIndex": 0,
+          "explanation": "Individual credentials should not be shared."
+        },
+        {
+          "id": "privacy-10",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "After a call, customer information is visible on an unattended screen. You should…",
+          "options": [
+            "Leave it open",
+            "Secure the workstation according to policy",
+            "Photograph it for reference"
+          ],
+          "correctIndex": 1,
+          "explanation": "Screen security protects confidential information."
         }
       ]
     },
@@ -624,6 +1114,76 @@
           ],
           "correctIndex": 1,
           "explanation": "Relevant details support appropriate routing."
+        },
+        {
+          "id": "deescalation-06",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer raises their voice after a missed callback. Best response?",
+          "options": [
+            "Match their volume",
+            "Promise dismissal of an employee",
+            "Acknowledge frustration and verify the follow-up status"
+          ],
+          "correctIndex": 2,
+          "explanation": "Acknowledgment plus investigation supports de-escalation."
+        },
+        {
+          "id": "deescalation-07",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A requested exception is outside policy. You should…",
+          "options": [
+            "Explain available options and the escalation channel",
+            "Invent an approval",
+            "Say rules never change"
+          ],
+          "correctIndex": 0,
+          "explanation": "Offer honest alternatives within authorization."
+        },
+        {
+          "id": "deescalation-08",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "The customer becomes quiet after bad news. You should…",
+          "options": [
+            "End immediately",
+            "Allow a pause and check what they need clarified",
+            "Keep talking without pause"
+          ],
+          "correctIndex": 1,
+          "explanation": "Allowing processing time supports understanding."
+        },
+        {
+          "id": "deescalation-09",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Your colleague must take over an escalated case. What helps?",
+          "options": [
+            "Omit key details",
+            "Blame the previous agent",
+            "Provide accurate notes and a clear handoff"
+          ],
+          "correctIndex": 2,
+          "explanation": "A good handoff avoids restarting the customer's explanation."
+        },
+        {
+          "id": "deescalation-10",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A dispute has no immediate solution. What should be included?",
+          "options": [
+            "A clear next action and realistic follow-up expectations",
+            "An unsupported guarantee",
+            "No case documentation"
+          ],
+          "correctIndex": 0,
+          "explanation": "Honest next steps reduce uncertainty."
         }
       ]
     },
@@ -702,6 +1262,76 @@
           ],
           "correctIndex": 0,
           "explanation": "Trend analysis helps test improvement actions."
+        },
+        {
+          "id": "operations-06",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A team handles 240 contacts in 8 agent-hours. What is the average per agent-hour?",
+          "options": [
+            "20",
+            "30",
+            "40"
+          ],
+          "correctIndex": 1,
+          "explanation": "240 divided by 8 equals 30 contacts per agent-hour."
+        },
+        {
+          "id": "operations-07",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A contact center targets 90% quality and achieves 93%. How many percentage points above target?",
+          "options": [
+            "3",
+            "3.3",
+            "30"
+          ],
+          "correctIndex": 0,
+          "explanation": "93 minus 90 is 3 percentage points."
+        },
+        {
+          "id": "operations-08",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "What does an unusually high transfer rate suggest investigating?",
+          "options": [
+            "Only call duration",
+            "Lunch schedules only",
+            "Routing, knowledge gaps and escalation reasons"
+          ],
+          "correctIndex": 2,
+          "explanation": "Transfers can reflect operational process issues."
+        },
+        {
+          "id": "operations-09",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A team's backlog increased during a system outage. What analysis is fair?",
+          "options": [
+            "Ignore outage impact",
+            "Separate outage effects from normal performance",
+            "Penalize all agents equally"
+          ],
+          "correctIndex": 1,
+          "explanation": "Context matters when interpreting performance."
+        },
+        {
+          "id": "operations-10",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "What should a manager do after implementing a queue process change?",
+          "options": [
+            "Measure outcomes and unintended effects",
+            "Declare success immediately",
+            "Avoid collecting feedback"
+          ],
+          "correctIndex": 0,
+          "explanation": "Follow-up measurement checks whether the change helped."
         }
       ]
     },
@@ -780,6 +1410,76 @@
           ],
           "correctIndex": 2,
           "explanation": "Version control supports fair evaluation."
+        },
+        {
+          "id": "qa-career-06",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Which sample best supports a fair quality review?",
+          "options": [
+            "Only calls from one agent",
+            "A documented sampling method across relevant cases",
+            "Only perfect interactions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sampling rules should fit review goals and risks."
+        },
+        {
+          "id": "qa-career-07",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A criterion is ambiguous. A QA analyst should…",
+          "options": [
+            "Score based on mood",
+            "Silently invent a definition",
+            "Seek clarification and document guidance"
+          ],
+          "correctIndex": 2,
+          "explanation": "Clear interpretations protect fairness."
+        },
+        {
+          "id": "qa-career-08",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A new defect category is proposed. What first?",
+          "options": [
+            "Define behavior, examples and severity rationale",
+            "Add it without guidance",
+            "Apply it retroactively without notice"
+          ],
+          "correctIndex": 0,
+          "explanation": "Explicit definitions help reviewers align."
+        },
+        {
+          "id": "qa-career-09",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A recurring silence issue appears on recordings. What useful analysis?",
+          "options": [
+            "Assume laziness",
+            "Check tool latency and behavior patterns",
+            "Ignore technology"
+          ],
+          "correctIndex": 1,
+          "explanation": "Root causes may involve systems and training."
+        },
+        {
+          "id": "qa-career-10",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "You are presenting QA findings to a client. What builds confidence?",
+          "options": [
+            "Anecdotes without data",
+            "Only agent names",
+            "Trends, examples, limitations and recommendations"
+          ],
+          "correctIndex": 2,
+          "explanation": "Transparent evidence supports decision-making."
         }
       ]
     },
@@ -858,6 +1558,76 @@
           ],
           "correctIndex": 1,
           "explanation": "Development planning is realistic without guarantees."
+        },
+        {
+          "id": "leadership-06",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A process update is misunderstood by several agents. First response?",
+          "options": [
+            "Clarify the process and check training gaps",
+            "Penalize all immediately",
+            "Ignore questions"
+          ],
+          "correctIndex": 0,
+          "explanation": "Multiple misunderstandings suggest a communication gap."
+        },
+        {
+          "id": "leadership-07",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Your strongest performer is exhausted. You should…",
+          "options": [
+            "Give them every difficult case",
+            "Discuss workload and support options",
+            "Tell them fatigue is impossible"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sustainable performance depends on reasonable support."
+        },
+        {
+          "id": "leadership-08",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Two shifts have different outcomes. What should a TL compare?",
+          "options": [
+            "Only scores",
+            "Only supervisor personalities",
+            "Workload, contact mix and supporting conditions"
+          ],
+          "correctIndex": 2,
+          "explanation": "Fair comparison requires context."
+        },
+        {
+          "id": "leadership-09",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "An agent offers a process improvement. You should…",
+          "options": [
+            "Assess the idea against evidence and constraints",
+            "Reject suggestions from junior agents",
+            "Implement without testing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Respectful evaluation encourages improvement."
+        },
+        {
+          "id": "leadership-10",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A new hire makes repeat errors. Best development action?",
+          "options": [
+            "Publicly criticize them",
+            "Diagnose the skill gap and provide targeted practice",
+            "Remove all responsibilities indefinitely"
+          ],
+          "correctIndex": 1,
+          "explanation": "Targeted learning is more useful than blame."
         }
       ]
     },
@@ -936,6 +1706,76 @@
           ],
           "correctIndex": 0,
           "explanation": "Objectives clarify what learners should be able to do."
+        },
+        {
+          "id": "trainer-06",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A learner answers correctly but cannot explain why. A trainer should…",
+          "options": [
+            "Assume mastery",
+            "Move on without question",
+            "Ask for reasoning and another example"
+          ],
+          "correctIndex": 2,
+          "explanation": "Transfer requires understanding beyond recall."
+        },
+        {
+          "id": "trainer-07",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "For a role-play rubric, what is most useful?",
+          "options": [
+            "Observable behaviors with clear levels",
+            "Vague impressions only",
+            "Attendance as the sole score"
+          ],
+          "correctIndex": 0,
+          "explanation": "Observable criteria support consistent feedback."
+        },
+        {
+          "id": "trainer-08",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Training participants struggle with one topic. Next?",
+          "options": [
+            "Repeat the slide word for word",
+            "Break it down and use guided practice",
+            "Skip the assessment"
+          ],
+          "correctIndex": 1,
+          "explanation": "Adapted instruction can close misunderstandings."
+        },
+        {
+          "id": "trainer-09",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "How can a trainer check retention after two weeks?",
+          "options": [
+            "Count slides",
+            "Ask only the trainer",
+            "Use a short follow-up scenario assessment"
+          ],
+          "correctIndex": 2,
+          "explanation": "Delayed retrieval indicates whether learning lasted."
+        },
+        {
+          "id": "trainer-10",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A new QA policy changes midway through onboarding. The trainer should…",
+          "options": [
+            "Update materials and clearly highlight the change",
+            "Teach the obsolete version",
+            "Hide the new criteria"
+          ],
+          "correctIndex": 0,
+          "explanation": "Current materials reduce learner confusion."
         }
       ]
     },
@@ -1014,6 +1854,76 @@
           ],
           "correctIndex": 1,
           "explanation": "Add the sequential durations: 15 + 25 + 20 = 60 minutes."
+        },
+        {
+          "id": "reasoning-06",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A sequence doubles each time: 3, 6, 12, 24. Next?",
+          "options": [
+            "36",
+            "48",
+            "60"
+          ],
+          "correctIndex": 1,
+          "explanation": "24 multiplied by 2 equals 48."
+        },
+        {
+          "id": "reasoning-07",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "If all blue tickets are urgent and ticket A is blue, what follows?",
+          "options": [
+            "Ticket A is urgent",
+            "All urgent tickets are blue",
+            "Ticket A is resolved"
+          ],
+          "correctIndex": 0,
+          "explanation": "Membership in the blue set implies urgency."
+        },
+        {
+          "id": "reasoning-08",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A task starts at 10:20 and takes 45 minutes. When does it finish?",
+          "options": [
+            "10:55",
+            "11:15",
+            "11:05"
+          ],
+          "correctIndex": 2,
+          "explanation": "10:20 plus 40 minutes is 11:00, plus 5 is 11:05."
+        },
+        {
+          "id": "reasoning-09",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Which number is missing: 1, 4, 9, 16, ?",
+          "options": [
+            "20",
+            "25",
+            "28"
+          ],
+          "correctIndex": 1,
+          "explanation": "These are squares: 1², 2², 3², 4², then 5² = 25."
+        },
+        {
+          "id": "reasoning-10",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Mira is older than Tara. Tara is older than Dev. Who is youngest?",
+          "options": [
+            "Dev",
+            "Mira",
+            "Tara"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dev comes last in the descending age order."
         }
       ]
     },
@@ -1092,6 +2002,76 @@
           ],
           "correctIndex": 1,
           "explanation": "(300 + 320 + 340) / 3 = 320 seconds."
+        },
+        {
+          "id": "data-reasoning-06",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A survey has 36 positive responses from 40 participants. Positive rate?",
+          "options": [
+            "85%",
+            "90%",
+            "95%"
+          ],
+          "correctIndex": 1,
+          "explanation": "36/40 = 0.90, or 90%."
+        },
+        {
+          "id": "data-reasoning-07",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Four calls last 2, 4, 6 and 8 minutes. Average duration?",
+          "options": [
+            "5 minutes",
+            "6 minutes",
+            "4 minutes"
+          ],
+          "correctIndex": 0,
+          "explanation": "20 total minutes divided by 4 equals 5 minutes."
+        },
+        {
+          "id": "data-reasoning-08",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Tickets fell from 200 to 150. How many fewer tickets?",
+          "options": [
+            "25",
+            "40",
+            "50"
+          ],
+          "correctIndex": 2,
+          "explanation": "200 minus 150 equals 50."
+        },
+        {
+          "id": "data-reasoning-09",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "If 8 out of 20 cases need escalation, what share is that?",
+          "options": [
+            "30%",
+            "40%",
+            "50%"
+          ],
+          "correctIndex": 1,
+          "explanation": "8/20 = 0.4 = 40%."
+        },
+        {
+          "id": "data-reasoning-10",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Queue volumes are Mon 70, Tue 90, Wed 80. Which day is highest?",
+          "options": [
+            "Tuesday",
+            "Wednesday",
+            "Monday"
+          ],
+          "correctIndex": 0,
+          "explanation": "90 contacts on Tuesday is the largest value."
         }
       ]
     }
