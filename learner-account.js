@@ -49,7 +49,7 @@ async function init(){
     if(user)location.hash='account';
   }
   const params=new URLSearchParams(location.search),authError=params.get('error_description')||params.get('error');
-  if(authError)tell('Google sign-in returned an error: '+authError);
+  if(authError){tell('Google sign-in failed: '+(authError.includes('Unable to exchange external code')?'Google OAuth credentials were rejected. Check the matching Google Client ID and Client Secret in Supabase.':authError));params.delete('error');params.delete('error_description');params.delete('error_code');const clean=params.toString();history.replaceState(null,'',location.pathname+(clean?'?'+clean:'')+'#account')}
   authLoading=false;draw();
  }catch(ex){authLoading=false;tell('Account initialization failed: '+ex.message);draw()}
 }
