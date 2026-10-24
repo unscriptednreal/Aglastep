@@ -24,6 +24,7 @@ function renderQ(){const t=state.track,q=t.questions[state.index];root.replaceCh
 function result(){
 const t=state.track,correct=t.questions.filter((q,i)=>state.answers[i]===q.correctIndex).length,pct=Math.round(correct/t.questions.length*100);
 const missed=t.questions.filter((q,i)=>state.answers[i]!==q.correctIndex);
+if(window.AglaProgress)window.AglaProgress.record({type:'lab',track:t.title,accuracy:pct,count:t.questions.length});
 const strengths=t.questions.filter((q,i)=>state.answers[i]===q.correctIndex);
 root.replaceChildren();
 const box=el('div',undefined,'ag2-panel ag5-report');
