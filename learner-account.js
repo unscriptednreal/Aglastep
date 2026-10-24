@@ -14,5 +14,5 @@ check.addEventListener('change',()=>{consent=check.checked;render()});
 async function upload(){if(!user||!consent||busy||!window.AglaProgress)return;busy=true;render();try{const data=window.AglaProgress.snapshot(),{error}=await client.from('learner_progress').upsert({user_id:user.id,progress:data,updated_at:new Date().toISOString()},{onConflict:'user_id'});if(error)throw error;status.textContent='Your latest practice snapshot is stored privately in your account.'}catch(err){status.textContent='Sync unsuccessful: '+err.message}finally{busy=false;render()}}
 sync.onclick=upload;logout.onclick=async()=>{const {error}=await client.auth.signOut();if(error)status.textContent=error.message;else{user=null;consent=false;check.checked=false;render()}};
 deleteCloud.onclick=async()=>{if(!user||!window.confirm('Delete your cloud-stored practice history? This does not delete your device data.'))return;const {error}=await client.from('learner_progress').delete().eq('user_id',user.id);status.textContent=error?'Deletion failed: '+error.message:'Cloud-stored practice history deleted.'};
-init();
+const sdk=document.createElement('script');sdk.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js';sdk.onload=init;sdk.onerror=()=>{status.textContent='Authentication service could not load. Please try again later.'};document.head.append(sdk);
 })();
