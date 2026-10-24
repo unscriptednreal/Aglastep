@@ -11,3 +11,12 @@ This is an **inactive scaffold**, not a live login service. GitHub Pages cannot 
 7. Learner data is not available for a public operator dashboard. Set up a separate privileged server with limited aggregate reporting and a published privacy policy before collecting or analyzing sitewide learner data. Avoid sharing user-level performance scores with employers without explicit, informed permission.
 
 For now, the default config leaves accounts disabled and keeps practice working anonymously.
+
+## Google Sign-In (free path)
+
+1. In Google Cloud Console create an OAuth web client for AglaStep. Add an authorized redirect URI `https://torroumusjjxvpykhzqr.supabase.co/auth/v1/callback`.
+2. In Supabase Dashboard → Authentication → Providers → Google, enable Google and enter the OAuth client ID and client secret directly in Supabase (never commit the secret).
+3. Supabase Authentication → URL Configuration: set Site URL `https://aglastep.in` and allow `https://aglastep.in/**`.
+4. Test Google sign-in with two distinct accounts and confirm that one user cannot read or modify the other user's `learner_progress` row.
+5. Account actions use explicit opt-in and buttons for uploading or restoring a snapshot; they **do not** continuously sync or merge changes across devices.
+6. Sitewide administrator reporting is deliberately not live until account and access-control testing succeeds. Do not expose service-role keys in static pages.
