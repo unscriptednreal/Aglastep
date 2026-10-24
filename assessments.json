@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "product": "AglaStep",
   "purpose": "Educational self-assessment, not hiring or certification",
   "tracks": [
@@ -936,6 +936,162 @@
           ],
           "correctIndex": 0,
           "explanation": "Objectives clarify what learners should be able to do."
+        }
+      ]
+    },
+    {
+      "id": "reasoning",
+      "title": "Logical Reasoning",
+      "audience": "fresher",
+      "description": "Patterns, deductions and structured thinking",
+      "questions": [
+        {
+          "id": "reasoning-01",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A queue has 5 callers. Priya is ahead of Omar, and Omar is ahead of Riya. Which must be true?",
+          "options": [
+            "Priya is ahead of Riya",
+            "Riya is ahead of Priya",
+            "Omar is first"
+          ],
+          "correctIndex": 0,
+          "explanation": "Position order is transitive: Priya precedes Omar, who precedes Riya."
+        },
+        {
+          "id": "reasoning-02",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "The sequence is 2, 6, 12, 20, 30. What comes next?",
+          "options": [
+            "40",
+            "42",
+            "44"
+          ],
+          "correctIndex": 1,
+          "explanation": "The gaps increase by two: 4, 6, 8, 10, then 12, so 30 + 12 = 42."
+        },
+        {
+          "id": "reasoning-03",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "All supervisors are employees. Some employees work nights. What can you conclude?",
+          "options": [
+            "All supervisors work nights",
+            "No supervisors work nights",
+            "No definite conclusion about supervisors' shifts"
+          ],
+          "correctIndex": 2,
+          "explanation": "The premises do not tell us which employees work at night."
+        },
+        {
+          "id": "reasoning-04",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "If the helpdesk closes at 9 PM and it is 7:45 PM, how long remains?",
+          "options": [
+            "75 minutes",
+            "85 minutes",
+            "95 minutes"
+          ],
+          "correctIndex": 0,
+          "explanation": "From 7:45 to 9:00 PM is 1 hour and 15 minutes."
+        },
+        {
+          "id": "reasoning-05",
+          "competency": "Logical Reasoning",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Three tasks take 15, 25 and 20 minutes with no overlap. Total time?",
+          "options": [
+            "50 minutes",
+            "60 minutes",
+            "70 minutes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Add the sequential durations: 15 + 25 + 20 = 60 minutes."
+        }
+      ]
+    },
+    {
+      "id": "data-reasoning",
+      "title": "Data Interpretation",
+      "audience": "mid",
+      "description": "Service metrics, percentages and evidence-based decisions",
+      "questions": [
+        {
+          "id": "data-reasoning-01",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "An agent resolves 18 of 24 cases on first contact. What is their first-contact resolution rate?",
+          "options": [
+            "65%",
+            "75%",
+            "80%"
+          ],
+          "correctIndex": 1,
+          "explanation": "18 divided by 24 is 0.75, or 75%."
+        },
+        {
+          "id": "data-reasoning-02",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Daily contacts are 80, 100 and 120. What is the average?",
+          "options": [
+            "90",
+            "100",
+            "110"
+          ],
+          "correctIndex": 1,
+          "explanation": "The total of 300 across three days produces an average of 100."
+        },
+        {
+          "id": "data-reasoning-03",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A queue drops from 50 waiting customers to 35. What percentage decrease is that?",
+          "options": [
+            "20%",
+            "30%",
+            "35%"
+          ],
+          "correctIndex": 1,
+          "explanation": "15 fewer customers divided by the original 50 equals 30%."
+        },
+        {
+          "id": "data-reasoning-04",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Team A has 9 satisfied of 10 responses. Team B has 80 satisfied of 100. Which has the higher rate?",
+          "options": [
+            "Team A",
+            "Team B",
+            "Both equal"
+          ],
+          "correctIndex": 0,
+          "explanation": "Team A has 90% satisfaction versus Team B's 80%; sample sizes differ."
+        },
+        {
+          "id": "data-reasoning-05",
+          "competency": "Data Interpretation",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "An AHT report shows 300, 320 and 340 seconds for three equally weighted calls. What is the mean?",
+          "options": [
+            "310 seconds",
+            "320 seconds",
+            "330 seconds"
+          ],
+          "correctIndex": 1,
+          "explanation": "(300 + 320 + 340) / 3 = 320 seconds."
         }
       ]
     }
