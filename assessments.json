@@ -1,0 +1,943 @@
+{
+  "schemaVersion": "1.0.0",
+  "product": "AglaStep",
+  "purpose": "Educational self-assessment, not hiring or certification",
+  "tracks": [
+    {
+      "id": "interview",
+      "title": "Interview Readiness",
+      "audience": "fresher",
+      "description": "Scenario-based practice for interview readiness",
+      "questions": [
+        {
+          "id": "interview-01",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A recruiter asks about a gap in your education. What is the best approach?",
+          "options": [
+            "Explain honestly and link your learning to the role",
+            "Invent an internship",
+            "Refuse to answer"
+          ],
+          "correctIndex": 0,
+          "explanation": "Honesty and relevant growth build credibility."
+        },
+        {
+          "id": "interview-02",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "The interviewer asks why you want a customer-service role.",
+          "options": [
+            "Mention only the night-shift allowance",
+            "Connect your communication strengths to helping customers",
+            "Say any job will do"
+          ],
+          "correctIndex": 1,
+          "explanation": "Show motivation relevant to the role."
+        },
+        {
+          "id": "interview-03",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "For a 60-second self-introduction, start with…",
+          "options": [
+            "Your personal family history",
+            "An unrelated joke",
+            "A concise background, skills and interest"
+          ],
+          "correctIndex": 2,
+          "explanation": "A structured professional introduction is easier to follow."
+        },
+        {
+          "id": "interview-04",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You are unsure of an interview question.",
+          "options": [
+            "Ask for clarification or think aloud carefully",
+            "Guess confidently and mislead",
+            "Change the topic"
+          ],
+          "correctIndex": 0,
+          "explanation": "Clarifying is preferable to bluffing."
+        },
+        {
+          "id": "interview-05",
+          "competency": "Interview Readiness",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "When asked about your weakness, you should…",
+          "options": [
+            "Say you have none",
+            "Share a real development area and steps to improve",
+            "Criticize your previous employer"
+          ],
+          "correctIndex": 1,
+          "explanation": "Use self-awareness with an improvement plan."
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "title": "Workplace English",
+      "audience": "fresher",
+      "description": "Scenario-based practice for workplace english",
+      "questions": [
+        {
+          "id": "english-01",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Choose the clearest professional sentence.",
+          "options": [
+            "I has checked your request.",
+            "I check it yesterday.",
+            "I have reviewed your request."
+          ],
+          "correctIndex": 2,
+          "explanation": "The present perfect is appropriate for a completed review with current relevance."
+        },
+        {
+          "id": "english-02",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A caller speaks too quickly. What do you say?",
+          "options": [
+            "Could you please repeat that a little more slowly?",
+            "Speak properly.",
+            "I cannot understand anything."
+          ],
+          "correctIndex": 0,
+          "explanation": "A polite specific clarification maintains rapport."
+        },
+        {
+          "id": "english-03",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Which message is most concise?",
+          "options": [
+            "Kindly be informed that I am proceeding in the direction of checking",
+            "I am checking your account now",
+            "At this point in time I am in the process"
+          ],
+          "correctIndex": 1,
+          "explanation": "Plain, direct language is clearer."
+        },
+        {
+          "id": "english-04",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You need a moment to check a process. Best phrase?",
+          "options": [
+            "Wait.",
+            "You must hold.",
+            "May I place you on a brief hold while I check?"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ask permission and explain the reason."
+        },
+        {
+          "id": "english-05",
+          "competency": "Workplace English",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Which sentence correctly uses 'their'?",
+          "options": [
+            "Their account details are updated.",
+            "There account details are updated.",
+            "They're account details are updated."
+          ],
+          "correctIndex": 0,
+          "explanation": "Their indicates possession."
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "title": "Active Listening",
+      "audience": "fresher",
+      "description": "Scenario-based practice for active listening",
+      "questions": [
+        {
+          "id": "listening-01",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer describes three separate issues. You should…",
+          "options": [
+            "Address only the last issue",
+            "Summarize and confirm all three",
+            "Interrupt after the first issue"
+          ],
+          "correctIndex": 1,
+          "explanation": "Summarizing checks understanding."
+        },
+        {
+          "id": "listening-02",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer pauses while explaining. Best response?",
+          "options": [
+            "Allow a short pause before speaking",
+            "Immediately interrupt",
+            "Assume the case is over"
+          ],
+          "correctIndex": 0,
+          "explanation": "Space to finish reduces misunderstanding."
+        },
+        {
+          "id": "listening-03",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You hear an unfamiliar name. You should…",
+          "options": [
+            "Guess the spelling",
+            "Use an unrelated name",
+            "Politely confirm the spelling"
+          ],
+          "correctIndex": 2,
+          "explanation": "Confirmation improves accuracy."
+        },
+        {
+          "id": "listening-04",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Why paraphrase a customer's issue?",
+          "options": [
+            "To shorten call time at any cost",
+            "To verify shared understanding",
+            "To prove the customer was wrong"
+          ],
+          "correctIndex": 1,
+          "explanation": "Paraphrasing checks both sides understand the problem."
+        },
+        {
+          "id": "listening-05",
+          "competency": "Active Listening",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "An upset caller repeats a concern. Best first step?",
+          "options": [
+            "Acknowledge the concern and restate it",
+            "Tell them they already said that",
+            "Move immediately to a survey"
+          ],
+          "correctIndex": 0,
+          "explanation": "Recognition supports de-escalation."
+        }
+      ]
+    },
+    {
+      "id": "empathy",
+      "title": "Customer Empathy",
+      "audience": "agent",
+      "description": "Scenario-based practice for customer empathy",
+      "questions": [
+        {
+          "id": "empathy-01",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "An angry customer says a refund has been delayed. Your first response?",
+          "options": [
+            "That is not my problem",
+            "I understand why this is frustrating; let me review the case",
+            "You should be patient"
+          ],
+          "correctIndex": 1,
+          "explanation": "Acknowledge frustration and investigate."
+        },
+        {
+          "id": "empathy-02",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer says they have explained the issue twice. You should…",
+          "options": [
+            "Ask them to repeat everything",
+            "Blame another agent",
+            "Apologize and summarize what you know"
+          ],
+          "correctIndex": 2,
+          "explanation": "Avoid unnecessary repetition and recognize their effort."
+        },
+        {
+          "id": "empathy-03",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A customer's service outage disrupted their work. Best response?",
+          "options": [
+            "Acknowledge the impact and explain the next step",
+            "Guarantee immediate restoration",
+            "Minimize the impact"
+          ],
+          "correctIndex": 0,
+          "explanation": "Empathy plus accurate action is useful."
+        },
+        {
+          "id": "empathy-04",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Which statement shows ownership without overpromising?",
+          "options": [
+            "I will make sure this never happens again",
+            "I'll review the information and explain what I can do",
+            "It's not my department"
+          ],
+          "correctIndex": 1,
+          "explanation": "Commit to controllable actions."
+        },
+        {
+          "id": "empathy-05",
+          "competency": "Customer Empathy",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A customer is confused by jargon. You should…",
+          "options": [
+            "Repeat the jargon louder",
+            "Send them elsewhere immediately",
+            "Use simple terms and check understanding"
+          ],
+          "correctIndex": 2,
+          "explanation": "Accessible language improves service."
+        }
+      ]
+    },
+    {
+      "id": "calls",
+      "title": "Call Handling",
+      "audience": "agent",
+      "description": "Scenario-based practice for call handling",
+      "questions": [
+        {
+          "id": "calls-01",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Before placing a caller on hold, you should…",
+          "options": [
+            "Ask permission and explain why",
+            "Mute without warning",
+            "End the call"
+          ],
+          "correctIndex": 0,
+          "explanation": "Clear hold etiquette prevents confusion."
+        },
+        {
+          "id": "calls-02",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "The caller interrupts your explanation. You should…",
+          "options": [
+            "Talk louder",
+            "Listen and regain the conversation respectfully",
+            "Disconnect"
+          ],
+          "correctIndex": 1,
+          "explanation": "Respectful turn-taking supports resolution."
+        },
+        {
+          "id": "calls-03",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "After resolving a case, your closing should include…",
+          "options": [
+            "A rapid goodbye",
+            "A sales pitch regardless of relevance",
+            "A brief recap and confirmation of next steps"
+          ],
+          "correctIndex": 2,
+          "explanation": "A clear recap helps prevent repeat contacts."
+        },
+        {
+          "id": "calls-04",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You need to transfer a call. What matters?",
+          "options": [
+            "Explain the reason and follow the transfer procedure",
+            "Transfer silently",
+            "Promise the receiving agent can fix anything"
+          ],
+          "correctIndex": 0,
+          "explanation": "Transparent transfers respect the caller."
+        },
+        {
+          "id": "calls-05",
+          "competency": "Call Handling",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A caller wants an answer you cannot verify. You should…",
+          "options": [
+            "Make up an answer",
+            "State you'll check an approved source",
+            "Guess based on experience"
+          ],
+          "correctIndex": 1,
+          "explanation": "Accuracy outweighs guessing."
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "Quality Assurance",
+      "audience": "agent",
+      "description": "Scenario-based practice for quality assurance",
+      "questions": [
+        {
+          "id": "quality-01",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Which is typically a critical compliance concern?",
+          "options": [
+            "Long greeting",
+            "Neutral tone",
+            "Skipping mandatory identity verification"
+          ],
+          "correctIndex": 2,
+          "explanation": "Mandatory verification protects customers and data."
+        },
+        {
+          "id": "quality-02",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A QA reviewer finds a repeated error. Best coaching focus?",
+          "options": [
+            "Identify behavior, impact and a practical improvement step",
+            "Only tell the agent their score",
+            "Publicly shame the agent"
+          ],
+          "correctIndex": 0,
+          "explanation": "Specific, actionable feedback helps improve."
+        },
+        {
+          "id": "quality-03",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A call score drops. First useful step?",
+          "options": [
+            "Assume the agent is careless",
+            "Examine the applicable quality criteria and evidence",
+            "Delete the call"
+          ],
+          "correctIndex": 1,
+          "explanation": "Evidence should guide assessment."
+        },
+        {
+          "id": "quality-04",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "What improves consistent QA evaluations?",
+          "options": [
+            "Personal preferences",
+            "Random scoring",
+            "Clear standards and calibration"
+          ],
+          "correctIndex": 2,
+          "explanation": "Calibration aligns scoring decisions."
+        },
+        {
+          "id": "quality-05",
+          "competency": "Quality Assurance",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "You disagree with a QA finding. You should…",
+          "options": [
+            "Refer to policy and discuss the call evidence",
+            "Argue personally",
+            "Ignore the result"
+          ],
+          "correctIndex": 0,
+          "explanation": "Evidence-based discussions resolve scoring differences."
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy & Security",
+      "audience": "agent",
+      "description": "Scenario-based practice for privacy & security",
+      "questions": [
+        {
+          "id": "privacy-01",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A caller asks for another person's account data. You should…",
+          "options": [
+            "Provide it if they sound urgent",
+            "Follow authorization and verification rules",
+            "Share a partial password"
+          ],
+          "correctIndex": 1,
+          "explanation": "Account access requires authorization."
+        },
+        {
+          "id": "privacy-02",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer emails a password. You should…",
+          "options": [
+            "Store it in notes",
+            "Forward it to colleagues",
+            "Follow security policy; avoid storing or repeating passwords"
+          ],
+          "correctIndex": 2,
+          "explanation": "Password handling should follow secure processes."
+        },
+        {
+          "id": "privacy-03",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "You notice an account change you didn't authorize. First?",
+          "options": [
+            "Report it using the approved security process",
+            "Ignore it",
+            "Edit logs"
+          ],
+          "correctIndex": 0,
+          "explanation": "Prompt reporting preserves investigation and safety."
+        },
+        {
+          "id": "privacy-04",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "How should you record sensitive details?",
+          "options": [
+            "In a personal messaging app",
+            "Only in approved systems with minimum necessary data",
+            "In a public sheet"
+          ],
+          "correctIndex": 1,
+          "explanation": "Least-privilege and approved storage reduce risk."
+        },
+        {
+          "id": "privacy-05",
+          "competency": "Privacy & Security",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Someone claims to be an executive and requests bypassing verification. You should…",
+          "options": [
+            "Comply due to status",
+            "Ask colleagues to guess identity",
+            "Follow standard authorization procedure"
+          ],
+          "correctIndex": 2,
+          "explanation": "Urgency or seniority doesn't replace verification."
+        }
+      ]
+    },
+    {
+      "id": "deescalation",
+      "title": "Escalations & De-escalation",
+      "audience": "agent",
+      "description": "Scenario-based practice for escalations & de-escalation",
+      "questions": [
+        {
+          "id": "deescalation-01",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A caller demands a supervisor. You should…",
+          "options": [
+            "Follow escalation policy and explain next steps",
+            "Refuse unconditionally",
+            "Pretend to be a supervisor"
+          ],
+          "correctIndex": 0,
+          "explanation": "Clear escalation handling manages expectations."
+        },
+        {
+          "id": "deescalation-02",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A customer becomes abusive. You should…",
+          "options": [
+            "Return the insult",
+            "Set respectful boundaries under policy",
+            "Threaten them"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stay professional while following safety policy."
+        },
+        {
+          "id": "deescalation-03",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A solution depends on another department. You should…",
+          "options": [
+            "Promise an instant fix",
+            "Stop tracking the issue",
+            "Set accurate expectations and document handoff"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ownership includes a clear handoff."
+        },
+        {
+          "id": "deescalation-04",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A caller rejects your first option. Next?",
+          "options": [
+            "Clarify priorities and explore approved alternatives",
+            "Repeat the same script louder",
+            "End the call immediately"
+          ],
+          "correctIndex": 0,
+          "explanation": "Needs-based options can unblock resolution."
+        },
+        {
+          "id": "deescalation-05",
+          "competency": "Escalations & De-escalation",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "An urgent complaint lacks key facts. You should…",
+          "options": [
+            "Create assumptions",
+            "Ask focused fact-finding questions",
+            "Skip records entirely"
+          ],
+          "correctIndex": 1,
+          "explanation": "Relevant details support appropriate routing."
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "BPO Metrics & Operations",
+      "audience": "mid",
+      "description": "Scenario-based practice for bpo metrics & operations",
+      "questions": [
+        {
+          "id": "operations-01",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "What does AHT commonly refer to?",
+          "options": [
+            "Agent Hiring Target",
+            "Account Handling Threshold",
+            "Average Handle Time"
+          ],
+          "correctIndex": 2,
+          "explanation": "AHT is the average time spent handling contacts including defined components."
+        },
+        {
+          "id": "operations-02",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "High repeat-contact rates may suggest…",
+          "options": [
+            "Unresolved root causes or unclear communication",
+            "Always better service",
+            "No need for analysis"
+          ],
+          "correctIndex": 0,
+          "explanation": "Repeat contacts can signal unresolved issues."
+        },
+        {
+          "id": "operations-03",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A rising CSAT score generally reflects…",
+          "options": [
+            "Longer breaks",
+            "Better reported customer satisfaction",
+            "More transfer errors"
+          ],
+          "correctIndex": 1,
+          "explanation": "CSAT is a customer-reported satisfaction measure."
+        },
+        {
+          "id": "operations-04",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "When comparing agent performance, a manager should…",
+          "options": [
+            "Ignore case complexity",
+            "Rank only by speed",
+            "Consider quality, mix, and context"
+          ],
+          "correctIndex": 2,
+          "explanation": "Balanced analysis avoids distorted incentives."
+        },
+        {
+          "id": "operations-05",
+          "competency": "BPO Metrics & Operations",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "What is a practical use for a trend dashboard?",
+          "options": [
+            "Spot recurring issues and track interventions",
+            "Replace all coaching",
+            "Guarantee promotions"
+          ],
+          "correctIndex": 0,
+          "explanation": "Trend analysis helps test improvement actions."
+        }
+      ]
+    },
+    {
+      "id": "qa-career",
+      "title": "QA Analyst Path",
+      "audience": "mid",
+      "description": "Scenario-based practice for qa analyst path",
+      "questions": [
+        {
+          "id": "qa-career-01",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A QA sampling approach should be…",
+          "options": [
+            "Biased toward disliked agents",
+            "Consistent and aligned with process risks",
+            "Chosen only from easiest calls"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sampling should support a fair and meaningful review."
+        },
+        {
+          "id": "qa-career-02",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Calibration sessions help teams…",
+          "options": [
+            "Avoid documenting standards",
+            "Raise all scores automatically",
+            "Align interpretation of evaluation criteria"
+          ],
+          "correctIndex": 2,
+          "explanation": "Shared interpretation improves consistency."
+        },
+        {
+          "id": "qa-career-03",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "When a defect repeats across many agents, inspect…",
+          "options": [
+            "Training and process/root-cause patterns",
+            "Only individual blame",
+            "Unrelated attendance"
+          ],
+          "correctIndex": 0,
+          "explanation": "Broad patterns may indicate systemic causes."
+        },
+        {
+          "id": "qa-career-04",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Which feedback style is most actionable?",
+          "options": [
+            "Improve communication",
+            "On the 2:10 call segment, confirm the customer's request before proceeding",
+            "Be perfect next time"
+          ],
+          "correctIndex": 1,
+          "explanation": "Specific observable evidence guides improvement."
+        },
+        {
+          "id": "qa-career-05",
+          "competency": "QA Analyst Path",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Before changing a defect definition, QA should…",
+          "options": [
+            "Change it silently",
+            "Apply it to old calls inconsistently",
+            "Align stakeholders and version the scorecard"
+          ],
+          "correctIndex": 2,
+          "explanation": "Version control supports fair evaluation."
+        }
+      ]
+    },
+    {
+      "id": "leadership",
+      "title": "Team Leader Readiness",
+      "audience": "mid",
+      "description": "Scenario-based practice for team leader readiness",
+      "questions": [
+        {
+          "id": "leadership-01",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "An agent repeatedly misses a target. Your first step?",
+          "options": [
+            "Review evidence and coach privately",
+            "Criticize publicly",
+            "Change the target secretly"
+          ],
+          "correctIndex": 0,
+          "explanation": "Coaching should begin with fact-finding and dignity."
+        },
+        {
+          "id": "leadership-02",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Two team members have a disagreement. You should…",
+          "options": [
+            "Take sides immediately",
+            "Listen to both and work toward a fair resolution",
+            "Ignore it indefinitely"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fair listening helps resolve conflict."
+        },
+        {
+          "id": "leadership-03",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A new process is announced. Best rollout?",
+          "options": [
+            "Send a vague message",
+            "Wait until errors appear",
+            "Explain changes, train and check understanding"
+          ],
+          "correctIndex": 2,
+          "explanation": "Communication and reinforcement support adoption."
+        },
+        {
+          "id": "leadership-04",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "A strong team huddle includes…",
+          "options": [
+            "Clear priorities, recognition and blockers",
+            "Only criticism",
+            "Private customer data on screen"
+          ],
+          "correctIndex": 0,
+          "explanation": "Focused huddles align people and surface support needs."
+        },
+        {
+          "id": "leadership-05",
+          "competency": "Team Leader Readiness",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "A top-performing agent requests growth. You should…",
+          "options": [
+            "Dismiss the request",
+            "Discuss goals and offer development opportunities",
+            "Guarantee promotion"
+          ],
+          "correctIndex": 1,
+          "explanation": "Development planning is realistic without guarantees."
+        }
+      ]
+    },
+    {
+      "id": "trainer",
+      "title": "Training & Coaching",
+      "audience": "mid",
+      "description": "Scenario-based practice for training & coaching",
+      "questions": [
+        {
+          "id": "trainer-01",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "A learner struggles with a concept. A trainer should…",
+          "options": [
+            "Repeat the same words louder",
+            "Skip the module",
+            "Use a different example and verify understanding"
+          ],
+          "correctIndex": 2,
+          "explanation": "Adaptation and checks improve learning."
+        },
+        {
+          "id": "trainer-02",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "foundation",
+          "prompt": "Which method tests real call-handling ability?",
+          "options": [
+            "Role-play with a clear rubric",
+            "Only attendance tracking",
+            "Only reading policies"
+          ],
+          "correctIndex": 0,
+          "explanation": "Applied practice reveals observable skills."
+        },
+        {
+          "id": "trainer-03",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "Useful coaching feedback should be…",
+          "options": [
+            "General and delayed",
+            "Specific, timely and behavior-focused",
+            "Focused on personality"
+          ],
+          "correctIndex": 1,
+          "explanation": "Feedback is most useful when tied to actions."
+        },
+        {
+          "id": "trainer-04",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "intermediate",
+          "prompt": "After training, effectiveness can be checked through…",
+          "options": [
+            "Only slide count",
+            "Trainer opinion alone",
+            "Practice performance and workplace outcomes"
+          ],
+          "correctIndex": 2,
+          "explanation": "Evaluation should examine learning and application."
+        },
+        {
+          "id": "trainer-05",
+          "competency": "Training & Coaching",
+          "type": "single-choice",
+          "difficulty": "applied",
+          "prompt": "Before a training session, set…",
+          "options": [
+            "Clear learning outcomes",
+            "Only a long agenda",
+            "No expectations"
+          ],
+          "correctIndex": 0,
+          "explanation": "Objectives clarify what learners should be able to do."
+        }
+      ]
+    }
+  ]
+}
