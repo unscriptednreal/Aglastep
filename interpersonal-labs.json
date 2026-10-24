@@ -1,0 +1,301 @@
+{
+  "schemaVersion": "1.0.0",
+  "studio": "AglaStep Interpersonal Skills",
+  "disclaimer": "Practice suggestions are educational, not psychological diagnoses or validated personality scores.",
+  "scenarios": [
+    {
+      "skill": "Empathy",
+      "title": "A frustrated customer",
+      "context": "A customer says: 'I've explained this three times, and nobody is listening.'",
+      "options": [
+        {
+          "text": "I can see why repeating yourself is frustrating. Let me recap what I understand so far.",
+          "score": 2,
+          "why": "Acknowledges the impact and checks understanding."
+        },
+        {
+          "text": "Please calm down so I can help.",
+          "score": 0,
+          "why": "Can sound dismissive and escalates tension."
+        },
+        {
+          "text": "Our previous agents followed the process.",
+          "score": 0,
+          "why": "Defending the process does not address the customer's concern."
+        }
+      ]
+    },
+    {
+      "skill": "Assertiveness",
+      "title": "An unrealistic request",
+      "context": "Your teammate asks you to complete their entire task while you have an urgent deadline.",
+      "options": [
+        {
+          "text": "I cannot take on the full task today, but I can help review the first part.",
+          "score": 2,
+          "why": "Sets a boundary while offering realistic help."
+        },
+        {
+          "text": "Fine, I'll do it, even if I miss my deadline.",
+          "score": 0,
+          "why": "Overcommitting creates preventable issues."
+        },
+        {
+          "text": "That's ridiculous. Do your own work.",
+          "score": 0,
+          "why": "Hostility makes collaboration harder."
+        }
+      ]
+    },
+    {
+      "skill": "Conflict resolution",
+      "title": "Two colleagues disagree",
+      "context": "Two teammates are disputing who owns a customer escalation.",
+      "options": [
+        {
+          "text": "Let's clarify the handoff rule and agree on next steps.",
+          "score": 2,
+          "why": "Focuses on shared process and resolution."
+        },
+        {
+          "text": "The more senior colleague must be right.",
+          "score": 0,
+          "why": "Seniority is not evidence of ownership."
+        },
+        {
+          "text": "Ignore it and wait for someone else.",
+          "score": 0,
+          "why": "Avoidance can leave the customer case unresolved."
+        }
+      ]
+    },
+    {
+      "skill": "Feedback",
+      "title": "Giving developmental feedback",
+      "context": "An agent repeatedly skips summarizing customer requests.",
+      "options": [
+        {
+          "text": "On the last two calls, the request wasn't recapped. Let's practise a 15-second summary.",
+          "score": 2,
+          "why": "Specific evidence plus a practice action supports improvement."
+        },
+        {
+          "text": "You're bad at listening.",
+          "score": 0,
+          "why": "Labels a person instead of describing behavior."
+        },
+        {
+          "text": "Your score was low. Fix it.",
+          "score": 0,
+          "why": "It lacks an actionable improvement step."
+        }
+      ]
+    },
+    {
+      "skill": "Teamwork",
+      "title": "A teammate is behind",
+      "context": "A teammate asks for help when your own queue is busy.",
+      "options": [
+        {
+          "text": "I have two urgent cases. Can we prioritize and involve the team lead if needed?",
+          "score": 2,
+          "why": "Balances competing responsibilities and collaboration."
+        },
+        {
+          "text": "I'll take everything without checking priorities.",
+          "score": 0,
+          "why": "Unplanned workload transfers create risk."
+        },
+        {
+          "text": "Not my problem.",
+          "score": 0,
+          "why": "Dismisses a chance to coordinate."
+        }
+      ]
+    },
+    {
+      "skill": "Active listening",
+      "title": "An unclear request",
+      "context": "A caller mentions a charge, an address change and a promised callback.",
+      "options": [
+        {
+          "text": "Let me confirm the three issues and which one is most urgent.",
+          "score": 2,
+          "why": "Summarizes and clarifies priority."
+        },
+        {
+          "text": "We'll only discuss the charge.",
+          "score": 0,
+          "why": "Ignores the broader request."
+        },
+        {
+          "text": "I know what you mean.",
+          "score": 0,
+          "why": "Assumes understanding without verifying."
+        }
+      ]
+    },
+    {
+      "skill": "Professional communication",
+      "title": "A delayed update",
+      "context": "A promised customer update is late because another team has not responded.",
+      "options": [
+        {
+          "text": "I'm sorry the update is late. I'm checking the status and will share the next confirmed step.",
+          "score": 2,
+          "why": "Takes ownership without an unsupported guarantee."
+        },
+        {
+          "text": "It's the other team's fault.",
+          "score": 0,
+          "why": "Blame is unhelpful to the customer."
+        },
+        {
+          "text": "We'll definitely resolve it in ten minutes.",
+          "score": 0,
+          "why": "Inventing timelines can damage trust."
+        }
+      ]
+    },
+    {
+      "skill": "Emotional regulation",
+      "title": "A difficult call ends",
+      "context": "After a hostile call, you feel frustrated and the next caller is waiting.",
+      "options": [
+        {
+          "text": "Use an approved brief reset and approach the next caller without carrying over frustration.",
+          "score": 2,
+          "why": "A short regulated transition helps maintain professionalism."
+        },
+        {
+          "text": "Take the frustration out on the next caller.",
+          "score": 0,
+          "why": "Transfers harm to another person."
+        },
+        {
+          "text": "Ignore procedures and leave the queue indefinitely.",
+          "score": 0,
+          "why": "Abandoning process may create further problems."
+        }
+      ]
+    },
+    {
+      "skill": "Inclusive communication",
+      "title": "Different communication needs",
+      "context": "A customer asks you to explain the process more slowly.",
+      "options": [
+        {
+          "text": "Of course. I'll take it one step at a time and pause for questions.",
+          "score": 2,
+          "why": "Adapts respectfully to the customer's request."
+        },
+        {
+          "text": "The instructions are already simple.",
+          "score": 0,
+          "why": "Dismisses an access need."
+        },
+        {
+          "text": "Ask someone else.",
+          "score": 0,
+          "why": "Unnecessarily deflects assistance."
+        }
+      ]
+    },
+    {
+      "skill": "Negotiation",
+      "title": "Competing team priorities",
+      "context": "You and another colleague need the same limited meeting slot.",
+      "options": [
+        {
+          "text": "Can we compare deadlines and find a time or format that meets both needs?",
+          "score": 2,
+          "why": "Explores interests and mutually workable alternatives."
+        },
+        {
+          "text": "I booked it first, end of discussion.",
+          "score": 0,
+          "why": "Focuses on position rather than options."
+        },
+        {
+          "text": "I'll agree to anything and not mention my deadline.",
+          "score": 0,
+          "why": "Concealing constraints leads to poor agreements."
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "skill": "Empathy",
+      "situation": "A customer has contacted support three times about a failed payment.",
+      "guidance": [
+        "Acknowledge the practical impact",
+        "Reflect the issue without inventing facts",
+        "Offer a concrete authorized next step"
+      ]
+    },
+    {
+      "skill": "Assertiveness",
+      "situation": "A colleague requests work you cannot complete within today's shift.",
+      "guidance": [
+        "State the limit respectfully",
+        "Explain the competing responsibility briefly",
+        "Suggest a realistic alternative"
+      ]
+    },
+    {
+      "skill": "Feedback",
+      "situation": "An agent missed a mandatory call recap in two sampled calls.",
+      "guidance": [
+        "Describe observable behavior",
+        "Explain impact",
+        "Agree on one practice action"
+      ]
+    },
+    {
+      "skill": "Conflict resolution",
+      "situation": "Two people disagree over a case handoff.",
+      "guidance": [
+        "Ask for each person's understanding",
+        "Refer to documented responsibility",
+        "Confirm owner and next check-in"
+      ]
+    },
+    {
+      "skill": "Active listening",
+      "situation": "A customer tells a long story containing two different problems.",
+      "guidance": [
+        "Summarize both problems",
+        "Clarify what matters most",
+        "Confirm the next action"
+      ]
+    },
+    {
+      "skill": "Professional communication",
+      "situation": "You must communicate an uncertain investigation timeframe.",
+      "guidance": [
+        "Be transparent about what is known",
+        "Avoid an invented deadline",
+        "State when or how the next update will be provided"
+      ]
+    },
+    {
+      "skill": "Inclusive communication",
+      "situation": "A customer asks for simpler instructions.",
+      "guidance": [
+        "Use plain language",
+        "Give one step at a time",
+        "Check understanding respectfully"
+      ]
+    },
+    {
+      "skill": "Teamwork",
+      "situation": "Your team must handle an unexpected queue spike.",
+      "guidance": [
+        "Share situational facts",
+        "Identify priorities and available support",
+        "Confirm who owns each action"
+      ]
+    }
+  ]
+}
