@@ -8,6 +8,7 @@ create table if not exists public.learner_progress (
 
 -- Rerunnable migrations. A malformed existing row will cause validation to fail:
 -- repair that row deliberately instead of silently deleting learner data.
+alter table public.learner_progress alter column progress set default '{"sessions":[],"visits":[],"events":[]}'::jsonb;
 alter table public.learner_progress
   drop constraint if exists progress_is_object,
   drop constraint if exists progress_size_limit,
