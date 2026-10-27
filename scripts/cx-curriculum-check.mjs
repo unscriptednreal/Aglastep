@@ -1,0 +1,10 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import vm from 'node:vm';
+const js=fs.readFileSync('cx-academy.js','utf8'),html=fs.readFileSync('index.html','utf8');
+new vm.Script(js,{filename:'cx-academy.js'});
+assert.match(html,/id="cx-academy"/);
+assert.match(html,/src="cx-academy\.js\?v=1\.0"/);
+for(const phrase of ['Discover the customer problem','Own a difficult escalation','Protect customer data','Write QA-ready case notes','Model response:','Self-review checklist','not saved or sent'])assert.ok(js.includes(phrase),'Missing guided lesson feature: '+phrase);
+assert.ok(!/fetch\(|XMLHttpRequest|sendBeacon/.test(js),'Draft must not be transmitted');
+assert.match(js,/let answered=false/);
+assert.match(js,/if\(answered\)return/);
+console.log('Passed: guided CX lesson syntax, wiring, privacy and repeated-answer guard.');
