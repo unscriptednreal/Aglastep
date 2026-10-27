@@ -1,0 +1,23 @@
+name: Supabase security static checks
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax checks
+        run: |
+          node --check learner-account.js
+          node --check learning-progress.js
+      - name: Supabase security and privacy regression
+        run: node scripts/security-regression.mjs

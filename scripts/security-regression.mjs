@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const sql=fs.readFileSync('supabase/learner-progress.sql','utf8');
+const auth=fs.readFileSync('learner-account.js','utf8');
+const config=fs.readFileSync('auth-config.js','utf8');
+assert.match(sql,/enable row level security/i);
+assert.match(sql,/force row level security/i);
+assert.match(sql,/revoke all on public\.learner_progress from public, anon, authenticated/i);
+for(const action of ['select','insert','update','delete'])assert.match(sql,new RegExp('for '+action+' to authenticated','i'));
+assert.equal((sql.match(/\(select auth\.uid\(\)\) = user_id/g)||[]).length,5,'All read/write policy expressions must check ownership');
+assert.match(sql,/progress_shape_valid/);
+assert.match(sql,/progress_size_limit/);
+assert.match(sql,/before insert or update/);
+assert.ok(!/sb_secret_|service_role|SUPABASE_SERVICE_ROLE_KEY\s*=/.test(config),'Secret key reference in public config');
+assert.match(auth,/select\('updated_at'\)/,'Backup status should request metadata only');
+assert.ok(!auth.includes('updated_at:new Date().toISOString()'), 'Client must not set authoritative cloud timestamp');
+assert.match(auth,/Signing out does not erase device history/,'Privacy disclosure must explain shared device history');
+console.log('Supabase policy and client-side privacy static checks passed. These do not prove deployed RLS or OAuth settings.');
